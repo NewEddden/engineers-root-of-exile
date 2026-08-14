@@ -26,7 +26,27 @@
   },
   {
     "id": "chapter-06",
-    "title": "Chapter 6",
+    "title": "Chapter 6: Iron - Rotation & Controll",
     "file": "chapter-06.html"
+  },
+  {
+    "id": "chapter-07",
+    "title": "Chapter 7: The Discharged Debt",
+    "file": "chapter-07.html"
+  },
+  {
+    "id": "chapter-08",
+    "title": "Chapter 8: What the Loop Kept",
+    "file": "chapter-08.html"
+  },
+  {
+    "id": "chapter-09",
+    "title": "Chapter 9: The Summons",
+    "file": "chapter-09.html"
+  },
+  {
+    "id": "chapter-10",
+    "title": "Chapter 10: Remember the Difference",
+    "file": "chapter-10.html"
   }
 ]
