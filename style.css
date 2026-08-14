@@ -114,7 +114,8 @@ body {
   color: var(--rune-gold);
 }
 
-.chapter-title {
+.chapter-title,
+.chapter-name {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.6rem;
