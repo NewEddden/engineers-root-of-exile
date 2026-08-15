@@ -12,6 +12,11 @@ const selects = document.querySelectorAll(".chapter-select");
 async function init() {
   try {
     const res = await fetch(CHAPTERS_JSON);
+
+    if (!res.ok) {
+      throw new Error(`${res.status} ${res.statusText}`);
+    }
+
     chapters = await res.json();
   } catch (err) {
     setTitle("Could not load chapters.json");
@@ -26,22 +31,35 @@ async function init() {
 
   populateDropdowns();
 
+  // Load chapter from URL hash, e.g. #ch-05
   const startId = window.location.hash.replace("#", "");
-  const startIndex = chapters.findIndex((c) => c.id === startId);
+  const startIndex = chapters.findIndex((chapter) => chapter.id === startId);
+
   loadChapter(startIndex !== -1 ? startIndex : 0);
 
-  prevBtns.forEach((btn) => btn.addEventListener("click", goPrev));
-  nextBtns.forEach((btn) => btn.addEventListener("click", goNext));
-  selects.forEach((select) =>
-    select.addEventListener("change", onSelectChange),
-  );
+  prevBtns.forEach((btn) => {
+    btn.addEventListener("click", goPrev);
+  });
+
+  nextBtns.forEach((btn) => {
+    btn.addEventListener("click", goNext);
+  });
+
+  selects.forEach((select) => {
+    select.addEventListener("change", onSelectChange);
+  });
+
   window.addEventListener("hashchange", onHashChange);
 }
 
 function populateDropdowns() {
   const optionsHtml = chapters
-    .map((c, i) => `<option value="${i}">${c.title}</option>`)
+    .map(
+      (chapter, index) =>
+        `<option value="${index}">Chapter ${chapter.number}: ${chapter.title}</option>`,
+    )
     .join("");
+
   selects.forEach((select) => {
     select.innerHTML = optionsHtml;
   });
@@ -49,36 +67,69 @@ function populateDropdowns() {
 
 async function loadChapter(index) {
   const chapter = chapters[index];
+
   if (!chapter) return;
+
+  currentIndex = index;
 
   contentEl.classList.remove("loaded");
   setTitle("Loading...");
 
   try {
     const res = await fetch(chapter.file);
-    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+
+    if (!res.ok) {
+      throw new Error(`${res.status} ${res.statusText}`);
+    }
+
     const html = await res.text();
+
     contentEl.innerHTML = html;
-    setTitle(hasOwnTitle() ? null : chapter.title);
+
+    // If the chapter HTML contains its own <h2>, hide the page title.
+    if (hasOwnTitle()) {
+      setTitle(null);
+    } else {
+      setTitle(chapter.title);
+    }
   } catch (err) {
-    contentEl.innerHTML =
-      "<p>Could not load this chapter. Check that the file path in chapters.json is correct.</p>";
     setTitle(chapter.title);
+
+    contentEl.innerHTML = `
+      <p>
+        Could not load this chapter.
+        Check that the file path in chapters.json is correct.
+      </p>
+    `;
+
     console.error(err);
   }
 
-  requestAnimationFrame(() => contentEl.classList.add("loaded"));
+  requestAnimationFrame(() => {
+    contentEl.classList.add("loaded");
+  });
 
-  currentIndex = index;
   syncControls();
-  window.location.hash = chapter.id;
-  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // Update URL without creating a history entry
+  if (window.location.hash !== `#${chapter.id}`) {
+    window.history.replaceState(null, "", `#${chapter.id}`);
+  }
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
 
 function hasOwnTitle() {
-  if (contentEl.querySelector("h2.chapter-name")) return true;
+  if (contentEl.querySelector("h2.chapter-name")) {
+    return true;
+  }
+
   const first = contentEl.firstElementChild;
-  return !!first && first.tagName === "H2";
+
+  return first && first.tagName === "H2";
 }
 
 function setTitle(text) {
@@ -92,33 +143,50 @@ function setTitle(text) {
 }
 
 function syncControls() {
+  // Update every chapter dropdown
   selects.forEach((select) => {
     select.value = String(currentIndex);
   });
+
+  // Disable Previous on first chapter
   prevBtns.forEach((btn) => {
     btn.disabled = currentIndex === 0;
   });
+
+  // Disable Next on last chapter
   nextBtns.forEach((btn) => {
     btn.disabled = currentIndex === chapters.length - 1;
   });
 }
 
 function goPrev() {
-  if (currentIndex > 0) loadChapter(currentIndex - 1);
+  if (currentIndex > 0) {
+    loadChapter(currentIndex - 1);
+  }
 }
 
 function goNext() {
-  if (currentIndex < chapters.length - 1) loadChapter(currentIndex + 1);
+  if (currentIndex < chapters.length - 1) {
+    loadChapter(currentIndex + 1);
+  }
 }
 
-function onSelectChange(e) {
-  loadChapter(Number(e.target.value));
+function onSelectChange(event) {
+  const index = Number(event.target.value);
+
+  if (!Number.isNaN(index)) {
+    loadChapter(index);
+  }
 }
 
 function onHashChange() {
   const id = window.location.hash.replace("#", "");
-  const index = chapters.findIndex((c) => c.id === id);
-  if (index !== -1 && index !== currentIndex) loadChapter(index);
+
+  const index = chapters.findIndex((chapter) => chapter.id === id);
+
+  if (index !== -1 && index !== currentIndex) {
+    loadChapter(index);
+  }
 }
 
 init();
