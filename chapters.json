@@ -1,52 +1,137 @@
 [
   {
-    "id": "chapter-01",
-    "title": "Chapter 1: Session Fourteen",
-    "file": "chapter-01.html"
+    "id": "ch-01",
+    "number": 1,
+    "title": "Session Fourteen",
+    "file": "chapters/chapter-01.html",
+    "date": "2026-08-07",
+    "words": 3530,
+    "status": "published"
   },
   {
-    "id": "chapter-02",
-    "title": "Chapter 2: Hollow Gifts",
-    "file": "chapter-02.html"
+    "id": "ch-02",
+    "number": 2,
+    "title": "Hollow Gifts",
+    "file": "chapters/chapter-02.html",
+    "date": "2026-08-07",
+    "words": 3269,
+    "status": "published"
   },
   {
-    "id": "chapter-03",
-    "title": "Chapter 3: Downwind",
-    "file": "chapter-03.html"
+    "id": "ch-03",
+    "number": 3,
+    "title": "Downwind",
+    "file": "chapters/chapter-03.html",
+    "date": "2026-08-07",
+    "words": 2905,
+    "status": "published"
   },
   {
-    "id": "chapter-04",
-    "title": "Chapter 4: The Vouch",
-    "file": "chapter-04.html"
+    "id": "ch-04",
+    "number": 4,
+    "title": "The Vouch",
+    "file": "chapters/chapter-04.html",
+    "date": "2026-08-08",
+    "words": 1844,
+    "status": "published"
   },
   {
-    "id": "chapter-05",
-    "title": "Chapter 5: Root Causes",
-    "file": "chapter-05.html"
+    "id": "ch-05",
+    "number": 5,
+    "title": "Root Causes",
+    "file": "chapters/chapter-05.html",
+    "date": "2026-08-09",
+    "words": 3299,
+    "status": "published"
   },
   {
-    "id": "chapter-06",
-    "title": "Chapter 6: Iron - Rotation & Controll",
-    "file": "chapter-06.html"
+    "id": "ch-06",
+    "number": 6,
+    "title": "Not Hollow",
+    "file": "chapters/chapter-06.html",
+    "date": "2026-08-10",
+    "words": 0,
+    "status": "published"
   },
   {
-    "id": "chapter-07",
-    "title": "Chapter 7: The Discharged Debt",
-    "file": "chapter-07.html"
+    "id": "ch-07",
+    "number": 7,
+    "title": "The Discharged Debt",
+    "file": "chapters/chapter-07.html",
+    "date": "2026-08-11",
+    "words": 0,
+    "status": "published"
   },
   {
-    "id": "chapter-08",
-    "title": "Chapter 8: What the Loop Kept",
-    "file": "chapter-08.html"
+    "id": "ch-08",
+    "number": 8,
+    "title": "What the Loop Kept",
+    "file": "chapters/chapter-08.html",
+    "date": "2026-08-12",
+    "words": 0,
+    "status": "published"
   },
   {
-    "id": "chapter-09",
-    "title": "Chapter 9: The Summons",
-    "file": "chapter-09.html"
+    "id": "ch-09",
+    "number": 9,
+    "title": "The Summons",
+    "file": "chapters/chapter-09.html",
+    "date": "2026-08-13",
+    "words": 0,
+    "status": "published"
   },
   {
-    "id": "chapter-10",
-    "title": "Chapter 10: Remember the Difference",
-    "file": "chapter-10.html"
+    "id": "ch-10",
+    "number": 10,
+    "title": "The Crown's Judgment",
+    "file": "chapters/chapter-10.html",
+    "date": "2026-08-14",
+    "words": 1663,
+    "status": "published"
+  },
+  {
+    "id": "ch-11",
+    "number": 11,
+    "title": "Head Count",
+    "file": "chapters/chapter-11.html",
+    "date": "2026-08-15",
+    "words": 1748,
+    "status": "published"
+  },
+  {
+    "id": "ch-12",
+    "number": 12,
+    "title": "Turned Earth",
+    "file": "chapters/chapter-12.html",
+    "date": "2026-08-15",
+    "words": 1604,
+    "status": "published"
+  },
+  {
+    "id": "ch-13",
+    "number": 13,
+    "title": "A Way to See It",
+    "file": "chapters/chapter-13.html",
+    "date": "2026-08-15",
+    "words": 1183,
+    "status": "published"
+  },
+  {
+    "id": "ch-14",
+    "number": 14,
+    "title": "Kaldo Iron",
+    "file": "chapters/chapter-14.html",
+    "date": "2026-08-15",
+    "words": 1086,
+    "status": "published"
+  },
+  {
+    "id": "ch-15",
+    "number": 15,
+    "title": "The Shape of It",
+    "file": "chapters/chapter-15.html",
+    "date": "2026-08-15",
+    "words": 1283,
+    "status": "published"
   }
 ]
