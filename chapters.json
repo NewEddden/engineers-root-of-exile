@@ -133,5 +133,50 @@
     "date": "2026-08-15",
     "words": 1283,
     "status": "published"
+  },
+  {
+    "id": "ch-16",
+    "number": 16,
+    "title": "The Foundry Rises",
+    "file": "chapters/chapter-16.html",
+    "date": "2026-08-16",
+    "words": 2578,
+    "status": "published"
+  },
+  {
+    "id": "ch-17",
+    "number": 17,
+    "title": "House Ducatis",
+    "file": "chapters/chapter-17.html",
+    "date": "2026-08-16",
+    "words": 2172,
+    "status": "published"
+  },
+  {
+    "id": "ch-18",
+    "number": 18,
+    "title": "Still Bleeding",
+    "file": "chapters/chapter-18.html",
+    "date": "2026-08-16",
+    "words": 2429,
+    "status": "published"
+  },
+  {
+    "id": "ch-19",
+    "number": 19,
+    "title": "The Same Water",
+    "file": "chapters/chapter-19.html",
+    "date": "2026-08-16",
+    "words": 2268,
+    "status": "published"
+  },
+  {
+    "id": "ch-20",
+    "number": 20,
+    "title": "Worth Taking",
+    "file": "chapters/chapter-20.html",
+    "date": "2026-08-16",
+    "words": 2146,
+    "status": "published"
   }
 ]
