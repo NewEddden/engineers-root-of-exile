@@ -5,7 +5,7 @@
     "title": "Session Fourteen",
     "file": "chapters/chapter-01.html",
     "date": "2026-08-07",
-    "words": 3530,
+    "words": 3490,
     "status": "published"
   },
   {
@@ -14,7 +14,7 @@
     "title": "Hollow Gifts",
     "file": "chapters/chapter-02.html",
     "date": "2026-08-07",
-    "words": 3269,
+    "words": 3055,
     "status": "published"
   },
   {
@@ -23,7 +23,7 @@
     "title": "Downwind",
     "file": "chapters/chapter-03.html",
     "date": "2026-08-07",
-    "words": 2905,
+    "words": 2803,
     "status": "published"
   },
   {
@@ -32,7 +32,7 @@
     "title": "The Vouch",
     "file": "chapters/chapter-04.html",
     "date": "2026-08-08",
-    "words": 1844,
+    "words": 2462,
     "status": "published"
   },
   {
@@ -41,7 +41,7 @@
     "title": "Root Causes",
     "file": "chapters/chapter-05.html",
     "date": "2026-08-09",
-    "words": 3299,
+    "words": 3610,
     "status": "published"
   },
   {
@@ -50,7 +50,7 @@
     "title": "Not Hollow",
     "file": "chapters/chapter-06.html",
     "date": "2026-08-10",
-    "words": 0,
+    "words": 3927,
     "status": "published"
   },
   {
@@ -59,7 +59,7 @@
     "title": "The Discharged Debt",
     "file": "chapters/chapter-07.html",
     "date": "2026-08-11",
-    "words": 0,
+    "words": 1268,
     "status": "published"
   },
   {
@@ -68,7 +68,7 @@
     "title": "What the Loop Kept",
     "file": "chapters/chapter-08.html",
     "date": "2026-08-12",
-    "words": 0,
+    "words": 1159,
     "status": "published"
   },
   {
@@ -77,7 +77,7 @@
     "title": "The Summons",
     "file": "chapters/chapter-09.html",
     "date": "2026-08-13",
-    "words": 0,
+    "words": 915,
     "status": "published"
   },
   {
@@ -86,7 +86,7 @@
     "title": "The Crown's Judgment",
     "file": "chapters/chapter-10.html",
     "date": "2026-08-14",
-    "words": 1663,
+    "words": 1981,
     "status": "published"
   },
   {
@@ -95,7 +95,7 @@
     "title": "Head Count",
     "file": "chapters/chapter-11.html",
     "date": "2026-08-15",
-    "words": 1748,
+    "words": 2158,
     "status": "published"
   },
   {
@@ -104,7 +104,7 @@
     "title": "Turned Earth",
     "file": "chapters/chapter-12.html",
     "date": "2026-08-15",
-    "words": 1604,
+    "words": 3257,
     "status": "published"
   },
   {
@@ -113,7 +113,7 @@
     "title": "A Way to See It",
     "file": "chapters/chapter-13.html",
     "date": "2026-08-15",
-    "words": 1183,
+    "words": 1338,
     "status": "published"
   },
   {
@@ -131,7 +131,7 @@
     "title": "The Shape of It",
     "file": "chapters/chapter-15.html",
     "date": "2026-08-15",
-    "words": 1283,
+    "words": 1600,
     "status": "published"
   },
   {
@@ -140,43 +140,61 @@
     "title": "The Foundry Rises",
     "file": "chapters/chapter-16.html",
     "date": "2026-08-16",
-    "words": 2578,
+    "words": 4008,
     "status": "published"
   },
   {
     "id": "ch-17",
     "number": 17,
-    "title": "House Ducatis",
+    "title": "The Stale Map",
     "file": "chapters/chapter-17.html",
     "date": "2026-08-16",
-    "words": 2172,
+    "words": 1630,
     "status": "published"
   },
   {
     "id": "ch-18",
     "number": 18,
-    "title": "Still Bleeding",
+    "title": "Held",
     "file": "chapters/chapter-18.html",
     "date": "2026-08-16",
-    "words": 2429,
+    "words": 2213,
     "status": "published"
   },
   {
     "id": "ch-19",
     "number": 19,
-    "title": "The Same Water",
+    "title": "House Ducatis",
     "file": "chapters/chapter-19.html",
     "date": "2026-08-16",
-    "words": 2268,
+    "words": 2576,
     "status": "published"
   },
   {
     "id": "ch-20",
     "number": 20,
-    "title": "Worth Taking",
+    "title": "Still Bleeding",
     "file": "chapters/chapter-20.html",
     "date": "2026-08-16",
-    "words": 2146,
+    "words": 2498,
+    "status": "published"
+  },
+  {
+    "id": "ch-21",
+    "number": 21,
+    "title": "The Same Water",
+    "file": "chapters/chapter-21.html",
+    "date": "2026-08-16",
+    "words": 2447,
+    "status": "published"
+  },
+  {
+    "id": "ch-22",
+    "number": 22,
+    "title": "Worth Taking",
+    "file": "chapters/chapter-22.html",
+    "date": "2026-08-16",
+    "words": 2556,
     "status": "published"
   }
 ]
