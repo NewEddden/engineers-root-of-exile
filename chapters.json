@@ -166,7 +166,7 @@
     "number": 19,
     "title": "House Ducatis",
     "file": "chapters/chapter-19.html",
-    "date": "2026-08-16",
+    "date": "2026-08-17",
     "words": 2576,
     "status": "published"
   },
@@ -175,7 +175,7 @@
     "number": 20,
     "title": "Still Bleeding",
     "file": "chapters/chapter-20.html",
-    "date": "2026-08-16",
+    "date": "2026-08-17",
     "words": 2498,
     "status": "published"
   },
@@ -184,7 +184,7 @@
     "number": 21,
     "title": "The Same Water",
     "file": "chapters/chapter-21.html",
-    "date": "2026-08-16",
+    "date": "2026-08-17",
     "words": 2447,
     "status": "published"
   },
@@ -193,8 +193,80 @@
     "number": 22,
     "title": "Worth Taking",
     "file": "chapters/chapter-22.html",
-    "date": "2026-08-16",
+    "date": "2026-08-17",
     "words": 2556,
+    "status": "published"
+  },
+  {
+    "id": "ch-23",
+    "number": 23,
+    "title": "The Other Ways",
+    "file": "chapters/chapter-23.html",
+    "date": "2026-08-18",
+    "words": 2225,
+    "status": "published"
+  },
+  {
+    "id": "ch-24",
+    "number": 24,
+    "title": "The Other Ways",
+    "file": "chapters/chapter-24.html",
+    "date": "2026-08-18",
+    "words": 2201,
+    "status": "published"
+  },
+  {
+    "id": "ch-25",
+    "number": 25,
+    "title": "Two Roads",
+    "file": "chapters/chapter-25.html",
+    "date": "2026-08-18",
+    "words": 2124,
+    "status": "published"
+  },
+  {
+    "id": "ch-26",
+    "number": 26,
+    "title": "Grain for Stone",
+    "file": "chapters/chapter-26.html",
+    "date": "2026-08-18",
+    "words": 2005,
+    "status": "published"
+  },
+  {
+    "id": "ch-27",
+    "number": 27,
+    "title": "The Man Who Watched",
+    "file": "chapters/chapter-27.html",
+    "date": "2026-08-18",
+    "words": 2049,
+    "status": "published"
+  },
+  {
+    "id": "ch-28",
+    "number": 28,
+    "title": "The Weak Road",
+    "file": "chapters/chapter-28.html",
+    "date": "2026-08-18",
+    "words": 2201,
+    "status": "published"
+  },
+  {
+    "id": "ch-29",
+    "number": 29,
+    "title": "The Man Who Reads Twice",
+    "file": "chapters/chapter-29.html",
+    "date": "2026-08-18",
+    "words": 2201,
+    "status": "published"
+  },
+  {
+    "id": "ch-30",
+    "number": 30,
+    "title": "Seen",
+    "file": "chapters/chapter-30.html",
+    "date": "2026-08-18",
+    "words": 2201,
     "status": "published"
   }
 ]
