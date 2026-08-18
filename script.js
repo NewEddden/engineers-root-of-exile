@@ -11,7 +11,7 @@ const selects = document.querySelectorAll(".chapter-select");
 
 async function init() {
   try {
-    const res = await fetch(CHAPTERS_JSON);
+    const res = await fetch(CHAPTERS_JSON, { cache: "no-store" });
 
     if (!res.ok) {
       throw new Error(`${res.status} ${res.statusText}`);
