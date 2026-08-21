@@ -268,5 +268,50 @@
     "date": "2026-08-18",
     "words": 2347,
     "status": "published"
+  },
+  {
+    "id": "ch-31",
+    "number": 31,
+    "title": "The Wrong Wall",
+    "file": "chapters/chapter-31.html",
+    "date": "2026-08-18",
+    "words": 2347,
+    "status": "published"
+  },
+  {
+    "id": "ch-32",
+    "number": 32,
+    "title": "A Guard's Work",
+    "file": "chapters/chapter-32.html",
+    "date": "2026-08-19",
+    "words": 2138,
+    "status": "published"
+  },
+  {
+    "id": "ch-33",
+    "number": 33,
+    "title": "The Only Hand",
+    "file": "chapters/chapter-33.html",
+    "date": "2026-08-19",
+    "words": 1855,
+    "status": "published"
+  },
+  {
+    "id": "ch-34",
+    "number": 34,
+    "title": "The Tell",
+    "file": "chapters/chapter-34.html",
+    "date": "2026-08-19",
+    "words": 1835,
+    "status": "published"
+  },
+  {
+    "id": "ch-35",
+    "number": 35,
+    "title": "The Cure",
+    "file": "chapters/chapter-35.html",
+    "date": "2026-08-19",
+    "words": 2347,
+    "status": "published"
   }
 ]
