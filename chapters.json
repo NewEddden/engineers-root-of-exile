@@ -313,5 +313,140 @@
     "date": "2026-08-19",
     "words": 2347,
     "status": "published"
+  },
+  {
+    "id": "ch-36",
+    "number": 36,
+    "title": "The Living Stone",
+    "file": "chapters/chapter-36.html",
+    "date": "2026-08-22",
+    "words": 2347,
+    "status": "published"
+  },
+  {
+    "id": "ch-37",
+    "number": 37,
+    "title": "Dead Man's Float",
+    "file": "chapters/chapter-37.html",
+    "date": "2026-08-22",
+    "words": 2347,
+    "status": "published"
+  },
+  {
+    "id": "ch-38",
+    "number": 38,
+    "title": "The Long Account",
+    "file": "chapters/chapter-38.html",
+    "date": "2026-08-22",
+    "words": 2347,
+    "status": "published"
+  },
+  {
+    "id": "ch-39",
+    "number": 39,
+    "title": "The Second Hand",
+    "file": "chapters/chapter-39.html",
+    "date": "2026-08-22",
+    "words": 2347,
+    "status": "published"
+  },
+  {
+    "id": "ch-40",
+    "number": 40,
+    "title": "The Standard",
+    "file": "chapters/chapter-40.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-41",
+    "number": 41,
+    "title": "",
+    "file": "chapters/chapter-41.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-42",
+    "number": 42,
+    "title": "",
+    "file": "chapters/chapter-42.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-43",
+    "number": 43,
+    "title": "",
+    "file": "chapters/chapter-43.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-44",
+    "number": 44,
+    "title": "",
+    "file": "chapters/chapter-44.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-45",
+    "number": 45,
+    "title": "",
+    "file": "chapters/chapter-45.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-46",
+    "number": 46,
+    "title": "",
+    "file": "chapters/chapter-46.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-47",
+    "number": 47,
+    "title": "",
+    "file": "chapters/chapter-47.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-48",
+    "number": 48,
+    "title": "",
+    "file": "chapters/chapter-48.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-49",
+    "number": 49,
+    "title": "",
+    "file": "chapters/chapter-49.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-50",
+    "number": 50,
+    "title": "",
+    "file": "chapters/chapter-50.html",
+    "date": "2026-08-23",
+    "words": 0,
+    "status": "published"
   }
 ]
