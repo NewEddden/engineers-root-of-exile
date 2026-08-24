@@ -38,6 +38,8 @@ async function init() {
   }
 
   populateDropdowns();
+  updateLatestCard();
+  setupHomeLinks();
 
   // Restore last-used mode (persists across reloads).
   mode = window.localStorage.getItem(MODE_KEY) === "all" ? "all" : "separate";
@@ -49,13 +51,20 @@ async function init() {
 
   prevBtns.forEach((btn) => btn.addEventListener("click", goPrev));
   nextBtns.forEach((btn) => btn.addEventListener("click", goNext));
-  selects.forEach((select) => select.addEventListener("change", onSelectChange));
+  selects.forEach((select) =>
+    select.addEventListener("change", onSelectChange),
+  );
   modeBtns.forEach((btn) =>
     btn.addEventListener("click", () => setMode(btn.dataset.mode)),
   );
   window.addEventListener("hashchange", onHashChange);
 
   applyMode();
+
+  // Arrived via a shared chapter link (#ch-05): land on the reader, not the top.
+  if (startIndex !== -1) {
+    scrollToSection("chapters");
+  }
 }
 
 function dedupeById(list) {
@@ -77,6 +86,86 @@ function populateDropdowns() {
 
   selects.forEach((select) => {
     select.innerHTML = optionsHtml;
+  });
+}
+
+/* ---- home landing: latest-chapter card ---- */
+
+function updateLatestCard() {
+  const numberEl = document.getElementById("latest-number");
+  const nameEl = document.getElementById("latest-name");
+  const dateEl = document.getElementById("latest-date");
+
+  // These only exist on the fused home page; bail quietly elsewhere.
+  if (!numberEl || !nameEl) return;
+
+  const latest = chapters[chapters.length - 1];
+
+  numberEl.textContent = `Chapter ${latest.number}`;
+  nameEl.textContent = latest.title;
+
+  if (dateEl && latest.date) {
+    const parsed = new Date(`${latest.date}T00:00:00`);
+    dateEl.textContent = Number.isNaN(parsed.getTime())
+      ? latest.date
+      : parsed.toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+  }
+}
+
+/* ---- home landing: same-page scroll for nav + CTAs ---- */
+// Links carry data-scroll="top" | "chapters". On this page we scroll to the
+// section; from a future separate page the plain href (index.html#...) just
+// navigates back here. "Start reading" / the latest card also open a chapter.
+
+function setupHomeLinks() {
+  const links = document.querySelectorAll("[data-scroll]");
+
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const target = link.dataset.scroll;
+      const section = document.getElementById(target);
+      if (!section) return; // not on this page, let the link navigate
+
+      event.preventDefault();
+
+      // Opening the reader from a call-to-action loads a chapter first.
+      if (link.id === "start-reading") {
+        jumpToChapter(0);
+      } else if (link.id === "latest-card") {
+        jumpToChapter(chapters.length - 1);
+      }
+
+      scrollToSection(target);
+    });
+  });
+}
+
+function jumpToChapter(index) {
+  currentIndex = index;
+
+  // Reading a single chapter only makes sense in "separate" mode.
+  if (mode !== "separate") {
+    setMode("separate"); // applyMode() loads currentIndex
+  } else {
+    loadChapter(index);
+  }
+}
+
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (!section) return;
+
+  const reduceMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+
+  section.scrollIntoView({
+    behavior: reduceMotion ? "auto" : "smooth",
+    block: "start",
   });
 }
 
@@ -164,11 +253,6 @@ async function loadChapter(index) {
   if (window.location.hash !== `#${chapter.id}`) {
     window.history.replaceState(null, "", `#${chapter.id}`);
   }
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
 }
 
 function hasOwnTitle() {
@@ -218,8 +302,6 @@ async function loadAllChapters() {
     document
       .getElementById(`all-${id}`)
       .scrollIntoView({ behavior: "auto", block: "start" });
-  } else {
-    window.scrollTo({ top: 0, behavior: "auto" });
   }
 }
 
@@ -273,12 +355,14 @@ function syncControls() {
 function goPrev() {
   if (currentIndex > 0) {
     loadChapter(currentIndex - 1);
+    scrollToSection("chapters");
   }
 }
 
 function goNext() {
   if (currentIndex < chapters.length - 1) {
     loadChapter(currentIndex + 1);
+    scrollToSection("chapters");
   }
 }
 
@@ -287,6 +371,7 @@ function onSelectChange(event) {
 
   if (!Number.isNaN(index)) {
     loadChapter(index);
+    scrollToSection("chapters");
   }
 }
 
@@ -295,6 +380,10 @@ function onHashChange() {
   if (mode !== "separate") return;
 
   const id = window.location.hash.replace("#", "");
+
+  // #top / #chapters are page anchors, not chapters; ignore them here.
+  if (id === "top" || id === "chapters") return;
+
   const index = chapters.findIndex((chapter) => chapter.id === id);
 
   if (index !== -1 && index !== currentIndex) {
