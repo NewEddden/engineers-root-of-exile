@@ -55,6 +55,12 @@ body {
   font-size: 20px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* safety: nothing should push the page sideways */
+}
+
+img,
+svg {
+  max-width: 100%;
 }
 
 a {
@@ -110,7 +116,7 @@ a:hover {
 .nav {
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 16px 34px;
   flex-wrap: wrap;
   padding: 28px 0 24px;
   border-bottom: 1px solid var(--border-soft);
@@ -123,6 +129,7 @@ a:hover {
   color: var(--muted);
   padding-bottom: 6px;
   border-bottom: 2px solid transparent;
+  white-space: nowrap;
 }
 .nav a:hover {
   color: var(--ink);
@@ -203,7 +210,7 @@ a:hover {
 .hero-title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(34px, 4.6vw, 52px);
+  font-size: clamp(30px, 4.6vw, 52px);
   line-height: 1.08;
   margin: 14px 0 22px;
   color: var(--ink);
@@ -383,6 +390,7 @@ a.mini:hover {
 }
 .search input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: 0;
   outline: 0;
@@ -464,6 +472,7 @@ a.mini:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   margin: 40px 0 10px;
 }
@@ -501,6 +510,7 @@ a.mini:hover {
 .reader-tools {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 14px;
   margin: 34px 0 20px;
 }
@@ -535,7 +545,7 @@ a.mini:hover {
 .chapter-body {
   max-width: var(--readw);
   margin: 0 auto;
-  padding: 30px 130px;
+  padding: 30px clamp(20px, 7vw, 130px);
 
   background: var(--parchment);
   color: var(--text-on-parchment);
@@ -550,7 +560,7 @@ a.mini:hover {
 }
 
 .chapter-body h1 {
-  font-size: 40px;
+  font-size: clamp(28px, 6vw, 40px);
   margin: 0 0 6px;
 }
 .chapter-body p {
@@ -621,17 +631,40 @@ a.mini:hover {
 
 /* ==========================================================================
    Responsive
+   --------------------------------------------------------------------------
+   Two breakpoints: tablet (<=820) restructures the grids; phone (<=560)
+   tightens the nav, cover, and type so nothing clips or overflows.
    ========================================================================== */
 @media (max-width: 820px) {
   body {
     font-size: 18px;
   }
+  .wrap {
+    padding: 0 20px;
+  }
+  .site-head {
+    padding: 40px 0 8px;
+  }
+  .nav {
+    gap: 14px 24px;
+    padding: 22px 0 20px;
+  }
+  .nav a {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
   .hero {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
+    padding: 36px 0 24px;
   }
   .cover {
-    max-width: 260px;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .hero-lede {
+    font-size: 19px;
   }
   .cards3 {
     grid-template-columns: 1fr;
@@ -641,14 +674,70 @@ a.mini:hover {
     gap: 4px;
     padding: 18px 6px;
   }
+  .toc .num {
+    order: 1;
+  }
+  .toc .ttl {
+    order: 2;
+    font-size: 24px;
+  }
   .toc .meta {
     order: 3;
   }
+  /* reader controls: full-width dropdown on top, prev/next side by side */
   .reader-bar {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .reader-bar select {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .reader-bar .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    padding: 0 16px;
+  }
+  .site-head {
+    padding: 32px 0 6px;
   }
   .nav {
-    gap: 20px;
+    gap: 10px 16px;
+    padding: 18px 0 16px;
+  }
+  .nav a {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    padding-bottom: 4px;
+  }
+  .site-title {
+    font-size: clamp(26px, 8vw, 34px);
+  }
+  .hero-title {
+    font-size: clamp(26px, 8vw, 34px);
+  }
+  .hero-lede {
+    font-size: 18px;
+  }
+  .cover {
+    max-width: 200px;
+  }
+  .hero-actions {
+    width: 100%;
+  }
+  .hero-actions .btn {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .section {
+    padding: 26px 0;
+  }
+  .prose {
+    font-size: 19px;
   }
 }
 
