@@ -40,6 +40,52 @@ body {
   color: var(--parchment);
 }
 
+/* mode toggle */
+
+.mode-toggle {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.mode-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  padding: 0.45rem 0.9rem;
+  background: transparent;
+  border: 1px solid var(--rune-gold);
+  color: var(--rune-gold);
+  border-radius: 3px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.mode-btn:hover {
+  background: rgba(179, 137, 63, 0.15);
+}
+
+.mode-btn.active {
+  background: var(--rune-gold);
+  color: var(--ink);
+}
+
+.mode-btn:focus-visible {
+  outline: 2px solid var(--rune-glow);
+  outline-offset: 2px;
+}
+
+/* all-chapters view */
+
+.all-chapter + .all-chapter {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--parchment-edge);
+}
+
 /* shell + nav */
 
 .page-shell {
