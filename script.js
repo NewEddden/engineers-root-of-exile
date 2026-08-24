@@ -1,13 +1,17 @@
 const CHAPTERS_JSON = "chapters.json";
+const MODE_KEY = "reader-mode";
 
 let chapters = [];
 let currentIndex = 0;
+let mode = "separate"; // "separate" | "all"
 
 const titleEl = document.getElementById("chapter-title");
 const contentEl = document.getElementById("chapter-content");
 const prevBtns = document.querySelectorAll(".prev-btn");
 const nextBtns = document.querySelectorAll(".next-btn");
 const selects = document.querySelectorAll(".chapter-select");
+const navs = document.querySelectorAll(".chapter-nav");
+const modeBtns = document.querySelectorAll(".mode-btn");
 
 async function init() {
   try {
@@ -24,6 +28,10 @@ async function init() {
     return;
   }
 
+  // chapters.json currently lists some ids more than once; drop the repeats
+  // so "All chapters" mode doesn't read the same chapter twice.
+  chapters = dedupeById(chapters);
+
   if (!chapters.length) {
     setTitle("No chapters yet");
     return;
@@ -31,25 +39,32 @@ async function init() {
 
   populateDropdowns();
 
-  // Load chapter from URL hash, e.g. #ch-05
+  // Restore last-used mode (persists across reloads).
+  mode = window.localStorage.getItem(MODE_KEY) === "all" ? "all" : "separate";
+
+  // Starting chapter from URL hash, e.g. #ch-05
   const startId = window.location.hash.replace("#", "");
   const startIndex = chapters.findIndex((chapter) => chapter.id === startId);
+  currentIndex = startIndex !== -1 ? startIndex : 0;
 
-  loadChapter(startIndex !== -1 ? startIndex : 0);
-
-  prevBtns.forEach((btn) => {
-    btn.addEventListener("click", goPrev);
-  });
-
-  nextBtns.forEach((btn) => {
-    btn.addEventListener("click", goNext);
-  });
-
-  selects.forEach((select) => {
-    select.addEventListener("change", onSelectChange);
-  });
-
+  prevBtns.forEach((btn) => btn.addEventListener("click", goPrev));
+  nextBtns.forEach((btn) => btn.addEventListener("click", goNext));
+  selects.forEach((select) => select.addEventListener("change", onSelectChange));
+  modeBtns.forEach((btn) =>
+    btn.addEventListener("click", () => setMode(btn.dataset.mode)),
+  );
   window.addEventListener("hashchange", onHashChange);
+
+  applyMode();
+}
+
+function dedupeById(list) {
+  const seen = new Set();
+  return list.filter((chapter) => {
+    if (seen.has(chapter.id)) return false;
+    seen.add(chapter.id);
+    return true;
+  });
 }
 
 function populateDropdowns() {
@@ -64,6 +79,40 @@ function populateDropdowns() {
     select.innerHTML = optionsHtml;
   });
 }
+
+/* ---- mode handling ---- */
+
+function setMode(newMode) {
+  if (newMode !== "separate" && newMode !== "all") return;
+  if (newMode === mode) return;
+
+  mode = newMode;
+  window.localStorage.setItem(MODE_KEY, mode);
+  applyMode();
+}
+
+function applyMode() {
+  const separate = mode === "separate";
+
+  modeBtns.forEach((btn) => {
+    const on = btn.dataset.mode === mode;
+    btn.classList.toggle("active", on);
+    btn.setAttribute("aria-pressed", String(on));
+  });
+
+  // Per-chapter nav (prev/next/dropdown) is only useful one chapter at a time.
+  navs.forEach((nav) => {
+    nav.style.display = separate ? "" : "none";
+  });
+
+  if (separate) {
+    loadChapter(currentIndex);
+  } else {
+    loadAllChapters();
+  }
+}
+
+/* ---- separate mode ---- */
 
 async function loadChapter(index) {
   const chapter = chapters[index];
@@ -132,6 +181,71 @@ function hasOwnTitle() {
   return first && first.tagName === "H2";
 }
 
+/* ---- all-chapters mode ---- */
+
+async function loadAllChapters() {
+  setTitle(null);
+  contentEl.classList.remove("loaded");
+  contentEl.innerHTML = "<p>Loading all chapters...</p>";
+
+  // Fetch in parallel, then assemble in reading order.
+  const htmls = await Promise.all(
+    chapters.map(async (chapter) => {
+      try {
+        const res = await fetch(chapter.file);
+        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+        return await res.text();
+      } catch (err) {
+        console.error("Failed to load", chapter.file, err);
+        return null;
+      }
+    }),
+  );
+
+  contentEl.innerHTML = chapters
+    .map((chapter, i) => buildChapterSection(chapter, htmls[i]))
+    .join("");
+
+  requestAnimationFrame(() => {
+    contentEl.classList.add("loaded");
+  });
+
+  syncControls();
+
+  // If we arrived with a chapter hash, jump to that section; else top.
+  const id = window.location.hash.replace("#", "");
+  if (id && document.getElementById(`all-${id}`)) {
+    document
+      .getElementById(`all-${id}`)
+      .scrollIntoView({ behavior: "auto", block: "start" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+}
+
+function buildChapterSection(chapter, html) {
+  const anchorId = `all-${chapter.id}`;
+
+  if (html === null) {
+    return (
+      `<section class="all-chapter" id="${anchorId}">` +
+      `<h2 class="chapter-name">Chapter ${chapter.number}: ${chapter.title}</h2>` +
+      `<p>Could not load this chapter.</p>` +
+      `</section>`
+    );
+  }
+
+  // Only add a heading if the chapter file doesn't already carry its own.
+  const hasHeading = /<h2[\s>]/i.test(html);
+  const heading = hasHeading
+    ? ""
+    : `<h2 class="chapter-name">Chapter ${chapter.number}: ${chapter.title}</h2>`;
+
+  return `<section class="all-chapter" id="${anchorId}">${heading}${html}</section>`;
+}
+
+/* ---- shared ---- */
+
 function setTitle(text) {
   if (text === null) {
     titleEl.textContent = "";
@@ -143,17 +257,14 @@ function setTitle(text) {
 }
 
 function syncControls() {
-  // Update every chapter dropdown
   selects.forEach((select) => {
     select.value = String(currentIndex);
   });
 
-  // Disable Previous on first chapter
   prevBtns.forEach((btn) => {
     btn.disabled = currentIndex === 0;
   });
 
-  // Disable Next on last chapter
   nextBtns.forEach((btn) => {
     btn.disabled = currentIndex === chapters.length - 1;
   });
@@ -180,8 +291,10 @@ function onSelectChange(event) {
 }
 
 function onHashChange() {
-  const id = window.location.hash.replace("#", "");
+  // Hash navigation only drives the single-chapter view.
+  if (mode !== "separate") return;
 
+  const id = window.location.hash.replace("#", "");
   const index = chapters.findIndex((chapter) => chapter.id === id);
 
   if (index !== -1 && index !== currentIndex) {
