@@ -362,7 +362,7 @@
   {
     "id": "ch-41",
     "number": 41,
-    "title": "",
+    "title": "The Signature",
     "file": "chapters/chapter-41.html",
     "date": "2026-08-23",
     "words": 0,
@@ -371,81 +371,90 @@
   {
     "id": "ch-42",
     "number": 42,
-    "title": "",
+    "title": "The Same Hand",
     "file": "chapters/chapter-42.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-43",
     "number": 43,
-    "title": "",
+    "title": "Owed and Recovered",
     "file": "chapters/chapter-43.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-44",
     "number": 44,
-    "title": "",
+    "title": "Turned Over",
     "file": "chapters/chapter-44.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-45",
     "number": 45,
-    "title": "",
+    "title": "Due Diligence",
     "file": "chapters/chapter-45.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-46",
     "number": 46,
-    "title": "",
+    "title": "The Metal Hull",
     "file": "chapters/chapter-46.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-47",
     "number": 47,
-    "title": "",
+    "title": "Two Hands, Then More",
     "file": "chapters/chapter-47.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-48",
     "number": 48,
-    "title": "",
+    "title": "The Cold Lead",
     "file": "chapters/chapter-48.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-49",
     "number": 49,
-    "title": "",
+    "title": "Rising Profile",
     "file": "chapters/chapter-49.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   },
   {
     "id": "ch-50",
     "number": 50,
-    "title": "",
+    "title": "Rising Profile",
     "file": "chapters/chapter-50.html",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
+    "words": 0,
+    "status": "published"
+  },
+  {
+    "id": "ch-50",
+    "number": 50,
+    "title": "Rising Profile",
+    "file": "chapters/chapter-50.html",
+    "date": "2026-08-24",
     "words": 0,
     "status": "published"
   }
