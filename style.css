@@ -1,0 +1,185 @@
+:root {
+  --ink: #17151a;
+  --ink-soft: #221f27;
+  --parchment: #ece3d0;
+  --parchment-edge: #d8cbac;
+  --rune-gold: #b3893f;
+  --rune-glow: #7266a6;
+  --ash: #948d80;
+  --text-on-parchment: #2a2419;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-mono: "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--parchment);
+  font-family: var(--font-body);
+}
+
+/* header */
+
+.site-header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.site-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin: 0;
+  color: var(--parchment);
+}
+
+/* shell + nav */
+
+.page-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+}
+
+.chapter-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.nav-btn {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  padding: 0.55rem 1rem;
+  background: transparent;
+  border: 1px solid var(--rune-gold);
+  color: var(--rune-gold);
+  border-radius: 3px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: var(--rune-gold);
+  color: var(--ink);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-btn:focus-visible,
+.chapter-select:focus-visible {
+  outline: 2px solid var(--rune-glow);
+  outline-offset: 2px;
+}
+
+.chapter-select {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  background: var(--ink-soft);
+  color: var(--parchment);
+  border: 1px solid #3a3540;
+  border-radius: 3px;
+}
+
+/* reading card */
+
+.page {
+  background: var(--parchment);
+  color: var(--text-on-parchment);
+  border: 1px solid var(--parchment-edge);
+  border-radius: 4px;
+  padding: 2.5rem 2.25rem 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.rune-divider {
+  display: block;
+  width: 90px;
+  height: 16px;
+  margin: 0 auto 1.5rem;
+  color: var(--rune-gold);
+}
+
+.chapter-title,
+.chapter-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.chapter-content {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.chapter-content.loaded {
+  opacity: 1;
+}
+
+.chapter-content p {
+  margin: 0 0 1.15rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.chapter-content p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  float: left;
+  line-height: 0.8;
+  padding: 0.06em 0.12em 0 0;
+  color: var(--rune-gold);
+}
+
+/* footer */
+
+.site-footer {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ash);
+  padding: 1rem 0 2.5rem;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 2rem 1.4rem 2.5rem;
+  }
+  .chapter-nav {
+    flex-wrap: wrap;
+  }
+  .chapter-select {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chapter-content {
+    transition: none;
+  }
+  .nav-btn {
+    transition: none;
+  }
+}
