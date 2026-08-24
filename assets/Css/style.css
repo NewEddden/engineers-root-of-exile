@@ -105,7 +105,7 @@ body {
 
 .nav-link {
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--parchment);
@@ -134,7 +134,7 @@ body {
 /* shell */
 
 .page-shell {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.25rem 4rem;
 }
@@ -163,10 +163,6 @@ body {
   border-radius: 4px;
   color: var(--rune-gold);
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.4);
-  background-image: url(../Images/Cover-Photo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -5px;
 }
 
 .rune-mark {
@@ -236,8 +232,7 @@ body {
 
 .cta {
   font-family: var(--font-mono);
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.8rem;
   letter-spacing: 0.03em;
   text-decoration: none;
   padding: 0.6rem 1.2rem;
