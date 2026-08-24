@@ -1,115 +1,150 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Engineer's Root of Exile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Marcus took the skill-transfer trial for the money. It worked. It also killed him. Novel."
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-head wrap">
       <h1 class="site-title">The Engineer's Root of Exile</h1>
+      <p class="site-sub">Novel</p>
     </header>
 
-    <main class="page-shell">
-      <div class="mode-toggle" role="group" aria-label="Reading mode">
-        <button
-          type="button"
-          class="mode-btn"
-          data-mode="separate"
-          aria-pressed="true"
-        >
-          Chapters separate
-        </button>
-        <button
-          type="button"
-          class="mode-btn"
-          data-mode="all"
-          aria-pressed="false"
-        >
-          All chapters
-        </button>
-      </div>
+    <nav class="nav wrap">
+      <a href="index.html" class="active">Home</a>
+      <a href="chapters.html">Chapters</a>
+      <a href="characters.html">Characters</a>
+      <a href="magic.html">Magic</a>
+      <a href="world.html">World</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="about.html">About</a>
+    </nav>
 
-      <nav class="chapter-nav" aria-label="Chapter navigation, top">
-        <button
-          type="button"
-          class="nav-btn prev-btn"
-          aria-label="Previous chapter"
-        >
-          &larr; Prev
-        </button>
-        <select class="chapter-select" aria-label="Jump to chapter"></select>
-        <button
-          type="button"
-          class="nav-btn next-btn"
-          aria-label="Next chapter"
-        >
-          Next &rarr;
-        </button>
-      </nav>
-
-      <article class="page">
-        <svg class="rune-divider" viewBox="0 0 120 20" aria-hidden="true">
-          <line
-            x1="0"
-            y1="10"
-            x2="45"
-            y2="10"
-            stroke="currentColor"
-            stroke-width="1"
-          />
-          <circle
-            cx="60"
-            cy="10"
-            r="5"
-            stroke="currentColor"
-            stroke-width="1"
+    <main class="wrap">
+      <section class="hero">
+        <div class="cover" aria-hidden="true">
+          <!-- swap for <img src="assets/images/cover.jpg" alt="cover"> when you have art -->
+          <svg
+            viewBox="0 0 60 60"
             fill="none"
-          />
-          <circle cx="60" cy="10" r="1.5" fill="currentColor" />
-          <line
-            x1="75"
-            y1="10"
-            x2="120"
-            y2="10"
             stroke="currentColor"
-            stroke-width="1"
-          />
-        </svg>
-        <h2 id="chapter-title" class="chapter-title">Loading...</h2>
-        <div id="chapter-content" class="chapter-content"></div>
-      </article>
+            stroke-width="1.5"
+          >
+            <line x1="30" y1="6" x2="30" y2="54" />
+            <path d="M30 20 L20 12 M30 20 L40 12" />
+            <circle cx="30" cy="30" r="4" />
+          </svg>
+        </div>
 
-      <nav class="chapter-nav" aria-label="Chapter navigation, bottom">
-        <button
-          type="button"
-          class="nav-btn prev-btn"
-          aria-label="Previous chapter"
+        <div>
+          <p class="eyebrow">Updates every Sunday</p>
+          <h2 class="hero-title">
+            They handed him worthless stones as an insult. He read the
+            documentation.
+          </h2>
+          <p class="hero-lede">
+            Marcus took the skill-transfer trial for the money. It worked. It
+            also killed him, and he wakes mid-sentence inside Emeric Randillia,
+            third prince, in the middle of being exiled to a barony that plague
+            and war already emptied. His brother's parting gift is a handful of
+            crystals everyone agrees are dead weight. They aren't.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Political Fantasy</span>
+            <span class="tag">Kingdom Building</span>
+            <span class="tag">Magic</span>
+            <span class="tag">Transmigration</span>
+            <span class="tag">Isekai</span>
+            <span class="tag">Competent Protagonist</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn solid" id="start-reading" href="read.html?ch=1"
+              >Start reading</a
+            >
+            <a class="btn" href="about.html">Where else to read</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider" aria-hidden="true">&#10007;</div>
+
+      <section class="section">
+        <span class="eyebrow">Latest chapter</span>
+        <a
+          class="latest-card"
+          id="latest-card"
+          href="chapters.html"
+          style="display: block"
         >
-          &larr; Prev
-        </button>
-        <select class="chapter-select" aria-label="Jump to chapter"></select>
-        <button
-          type="button"
-          class="nav-btn next-btn"
-          aria-label="Next chapter"
-        >
-          Next &rarr;
-        </button>
-      </nav>
+          <span class="kicker" id="latest-kicker">Chapter</span>
+          <h3 id="latest-title">Loading&hellip;</h3>
+          <span class="meta" id="latest-meta"></span>
+        </a>
+        <a class="all-link" href="chapters.html">All chapters &rarr;</a>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">Start somewhere</span>
+        <div class="cards3">
+          <a class="mini" href="magic.html">
+            <h4>The Magic</h4>
+            <p>Runes, Hollow Crystal, and what it costs to carve one.</p>
+          </a>
+          <a class="mini" href="world.html">
+            <h4>The World</h4>
+            <p>Randillia, its neighbours, and the barony of Kaldo.</p>
+          </a>
+          <a class="mini" href="characters.html">
+            <h4>The Cast</h4>
+            <p>Spoiler-safe entries. Set how far you've read.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="eyebrow">What this is</span>
+        <p class="prose">
+          Kaldo has farmable soil nobody knows how to work, a baron who resents
+          his arrival, and a court that wants him irrelevant. Emeric has an
+          engineer's instincts, a magic system nobody has ever treated as
+          tunable, and a blind spot: he reads systems perfectly and people
+          badly. That one is going to cost him someone.
+        </p>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <p>The Engineer's Root of Exile, an ongoing serial.</p>
+    <footer class="site-foot">
+      &copy; 2026 Edly Cenatus. All rights reserved.
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script>
+      EROE.load()
+        .then(({ chapters }) => {
+          if (!chapters.length) return;
+          const latest = chapters[chapters.length - 1];
+          document.getElementById("start-reading").href = EROE.readHref(
+            chapters[0].n,
+          );
+          document.getElementById("latest-kicker").textContent =
+            "Chapter " + latest.n;
+          document.getElementById("latest-title").textContent = latest.title;
+          document.getElementById("latest-meta").textContent =
+            "Posted " + EROE.fmtDate(latest.date);
+          document.getElementById("latest-card").href = EROE.readHref(latest.n);
+        })
+        .catch(() => {
+          document.getElementById("latest-title").textContent =
+            "Chapters unavailable";
+        });
+    </script>
   </body>
 </html>

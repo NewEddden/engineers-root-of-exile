@@ -1,54 +1,74 @@
-# Randillia reader
+# The Engineer's Root of Exile
 
-A single-page site for reading your novel chapter by chapter, with previous/next buttons and a dropdown to jump straight to any chapter. The chapter list lives in `chapters.json`, actual chapter text lives in separate files in `chapters/`.
+Static site for the serial. No build step. Hosts on GitHub Pages as-is.
 
-## File structure
-
-```
-index.html          the page itself, don't need to edit this to add chapters
-style.css            styling
-script.js            loads chapters.json, handles prev/next/dropdown
-chapters.json        ordered list of chapters (id, title, file path)
-chapters/
-  chapter-01.html
-  chapter-02.html
-  chapter-03.html
-```
-
-## Adding a new chapter
-
-1. Create a new file in `chapters/`, e.g. `chapter-04.html`. Wrap each paragraph in its own `<p>` tag.
-2. Add an entry to `chapters.json`:
-```json
-{
-  "id": "chapter-04",
-  "title": "Chapter 4: Your Title",
-  "file": "chapters/chapter-04.html"
-}
-```
-3. That's it, the dropdown and prev/next order both come from the order of this array.
-
-## Testing locally
-
-Opening `index.html` directly by double-clicking it will not work. The page fetches `chapters.json` and the chapter files with `fetch()`, and browsers block that over the `file://` protocol. You need a local server. From the project folder, if you have Python installed:
+## Structure
 
 ```
-python -m http.server 8000
+engineers-root-of-exile-main/
+├── index.html          Home
+├── chapters.html       Table of contents (paginated + search)
+├── read.html           Reader (single chapter, or all-on-one-page for TTS)
+├── characters.html     stub
+├── magic.html          stub
+├── world.html          stub
+├── glossary.html       stub
+├── about.html          stub
+├── chapters/           YOUR chapter files, unchanged: chapter-01.html ...
+└── assets/
+    ├── css/style.css
+    ├── js/
+    │   ├── data.js      shared loader/helpers
+    │   ├── chapters.js  TOC page
+    │   └── reader.js    reader page
+    ├── data/chapters.json   <-- the list every page reads from
+    └── images/
 ```
 
-then visit `http://localhost:8000`. VS Code's Live Server extension works too. Once it's on GitHub Pages this stops being an issue, since it's served over https.
+## Merging this into your existing repo
 
-## Deploying to GitHub Pages
+1. Copy everything EXCEPT `chapters/` into your repo root, overwriting the old
+   `index.html`, `style.css`, `script.js`, `chapters.json`. Your `chapters/`
+   folder stays as it is.
+2. Delete the old root-level `style.css`, `script.js`, and `chapters.json` if
+   they're still there. The new versions live under `assets/`.
+3. Open `assets/data/chapters.json` and list every chapter. `slug` is the file
+   name in `chapters/` without `.html`. Home shows the LAST entry as "latest".
 
-1. Create a new repository on GitHub and push these files to it (the whole folder, keeping the `chapters/` subfolder intact).
-2. In the repo, go to Settings > Pages.
-3. Under "Build and deployment," set Source to "Deploy from a branch," pick your default branch (usually `main`) and `/root`.
-4. Save. GitHub gives you a URL, usually `https://yourusername.github.io/repo-name/`, live within a minute or two.
+You do NOT need to edit the 41 chapter files. The reader fetches each one and
+pulls out its main content (it looks for `#chapter-content`, then `<article>`,
+then `<main>`, then falls back to `<body>`), so both full-page and fragment
+chapter files work. If you want a chapter file to look styled when opened
+directly, point its own `<link>` at `../assets/css/style.css`.
 
-Any time you push a new chapter file plus its `chapters.json` entry, the live site updates automatically.
+## Things that will bite you (read this)
 
-## Customizing
+- **Relative paths only.** Every path in these files is relative (`assets/...`,
+  `chapters/...`, no leading `/`). If this is a project page
+  (`you.github.io/engineers-root-of-exile/`), leading-slash paths break. Keep
+  them relative.
+- **Test over a server, not by double-clicking.** Chapters load via `fetch()`,
+  which the `file://` protocol blocks. Run `python -m http.server 8000` in the
+  repo folder, then open `http://localhost:8000`. On GitHub Pages it's HTTP, so
+  it just works.
+- **All-chapters mode + your TTS:** `read.html?view=all` fetches every chapter
+  and injects it into one page. Your TTS must read the *rendered* page (the DOM
+  after JavaScript runs), which browser-based readers do. If your TTS reads raw
+  HTML source instead, it won't see the injected text and you'll need a
+  pre-built combined file instead. Confirm this before relying on it.
+- **Your numbers don't currently match.** The home mock said "Chapter 50", the
+  TOC said "22 chapters", the folder has 41 files. Whatever is in
+  `chapters.json` is what renders. Keep it in sync with `chapters/`.
 
-- Site title: edit the `<h1 class="site-title">` line in `index.html`.
-- Colors and fonts: all in the `:root` block at the top of `style.css`.
-- The two nav bars (top and bottom of each chapter) are separate elements in `index.html` sharing the same classes, so JS updates both together. Delete either one if you only want a single nav row.
+## Pagination labels
+
+The TOC lists chapters ascending (1, 2, 3 ...), 10 per page. "← Newer" goes to a
+lower page number, "Older →" to a higher one, matching your mock. If you'd
+rather list newest-first, flip the sort in `chapters.js` (`applyFilter`) or say
+so and I'll change it.
+
+## Search
+
+On `chapters.html`: type a title fragment or a number. "50", "ch 50", and
+"chapter 50" all work; partial numbers ("5" surfaces 5, 15, 50). It filters the
+full list and re-paginates, and syncs to the URL (`?q=...&page=...`).

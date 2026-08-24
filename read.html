@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Read &mdash; The Engineer's Root of Exile</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-head wrap">
+      <h1 class="site-title">The Engineer's Root of Exile</h1>
+      <p class="site-sub">Novel</p>
+    </header>
+
+    <nav class="nav wrap">
+      <a href="index.html">Home</a>
+      <a href="chapters.html" class="active">Chapters</a>
+      <a href="characters.html">Characters</a>
+      <a href="magic.html">Magic</a>
+      <a href="world.html">World</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <main class="wrap">
+      <div class="reader-tools">
+        <a class="btn" id="btn-separate" href="read.html?ch=1"
+          >Chapters separate</a
+        >
+        <a class="btn" id="btn-all" href="read.html?view=all">All chapters</a>
+      </div>
+
+      <div class="reader-bar" id="reader-bar">
+        <button class="btn" id="btn-prev" type="button">&larr; Prev</button>
+        <select id="chapter-select" aria-label="Jump to chapter"></select>
+        <button class="btn" id="btn-next" type="button">Next &rarr;</button>
+      </div>
+
+      <article class="chapter-body" id="reader-content">
+        <div class="loading">Loading&hellip;</div>
+      </article>
+    </main>
+
+    <footer class="site-foot">
+      &copy; 2026 Edly Cenatus. All rights reserved.
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/reader.js"></script>
+  </body>
+</html>

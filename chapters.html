@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chapters &mdash; The Engineer's Root of Exile</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-head wrap">
+      <h1 class="site-title">The Engineer's Root of Exile</h1>
+      <p class="site-sub">Novel</p>
+    </header>
+
+    <nav class="nav wrap">
+      <a href="index.html">Home</a>
+      <a href="chapters.html" class="active">Chapters</a>
+      <a href="characters.html">Characters</a>
+      <a href="magic.html">Magic</a>
+      <a href="world.html">World</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <main class="wrap">
+      <div class="page-head">
+        <span class="eyebrow">Table of contents</span>
+        <h1>Chapters</h1>
+        <p class="count" id="toc-count">Loading&hellip;</p>
+      </div>
+
+      <div class="toc-tools">
+        <label class="search">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search by title or number&hellip;"
+            autocomplete="off"
+            aria-label="Search chapters"
+          />
+          <button
+            id="search-clear"
+            class="clear"
+            type="button"
+            aria-label="Clear search"
+          >
+            clear
+          </button>
+        </label>
+        <a class="btn" href="read.html?view=all">Read all on one page</a>
+      </div>
+
+      <ul class="toc" id="toc-list"></ul>
+      <nav class="pager" id="pager" aria-label="Chapter pages"></nav>
+    </main>
+
+    <footer class="site-foot">
+      &copy; 2026 Edly Cenatus. All rights reserved.
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/chapters.js"></script>
+  </body>
+</html>
