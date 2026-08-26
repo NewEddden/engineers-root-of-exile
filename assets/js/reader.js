@@ -1,15 +1,3 @@
-/* reader.js — read.html
-   Modes:
-     read.html?ch=N   -> one chapter, with dropdown + Prev/Next  ("Chapters separate")
-     read.html?view=all -> every chapter stacked on one page      ("All chapters", for TTS)
-
-   Chapter text is pulled from chapters/<slug>.html via fetch, so the chapters/
-   folder never has to change. We extract the main content from each file
-   (article > main > body) so both full-page and fragment chapter files work.
-
-   NOTE: fetch() only works over http(s). Opening read.html straight off disk
-   (file://) will fail with a CORS error, use a local server for testing. */
-
 (function () {
   const params = new URLSearchParams(location.search);
   const isAll = params.get("view") === "all";
@@ -21,6 +9,11 @@
   const elNext = document.getElementById("btn-next");
   const elSelect = document.getElementById("chapter-select");
   const elContent = document.getElementById("reader-content");
+
+  const elBarBottom = document.getElementById("reader-bar-bottom");
+  const elPrevBottom = document.getElementById("btn-prev-bottom");
+  const elNextBottom = document.getElementById("btn-next-bottom");
+  const elSelectBottom = document.getElementById("chapter-select-bottom");
 
   async function extractContent(url) {
     const res = await fetch(url, { cache: "no-cache" });
@@ -44,6 +37,21 @@
     elAll.href = "read.html?view=all";
   }
 
+  // Build one chapter dropdown. Called for both the top and bottom bars.
+  function fillSelect(sel, chapters, ch) {
+    sel.innerHTML = "";
+    chapters.forEach((c) => {
+      const opt = document.createElement("option");
+      opt.value = c.n;
+      opt.textContent = "Chapter " + c.n + ": " + c.title;
+      if (c.n === ch.n) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.onchange = () => {
+      location.href = "read.html?ch=" + sel.value;
+    };
+  }
+
   // ---- SEPARATE MODE -------------------------------------------------------
   async function renderSingle(chapters) {
     let n = parseInt(params.get("ch") || "", 10);
@@ -51,24 +59,17 @@
     if (idx === -1) idx = 0; // default to first chapter
     const ch = chapters[idx];
 
-    // dropdown
-    elSelect.innerHTML = "";
-    chapters.forEach((c) => {
-      const opt = document.createElement("option");
-      opt.value = c.n;
-      opt.textContent = "Chapter " + c.n + ": " + c.title;
-      if (c.n === ch.n) opt.selected = true;
-      elSelect.appendChild(opt);
-    });
-    elSelect.onchange = () => {
-      location.href = "read.html?ch=" + elSelect.value;
-    };
+    // dropdowns (top + bottom)
+    fillSelect(elSelect, chapters, ch);
+    fillSelect(elSelectBottom, chapters, ch);
 
     // prev / next by position, so gaps in numbering don't break navigation
     const prev = chapters[idx - 1];
     const next = chapters[idx + 1];
     wireNav(elPrev, prev, "\u2190 Prev");
     wireNav(elNext, next, "Next \u2192");
+    wireNav(elPrevBottom, prev, "\u2190 Prev");
+    wireNav(elNextBottom, next, "Next \u2192");
 
     document.title =
       "Ch " + ch.n + ": " + ch.title + " \u2014 The Engineer's Root of Exile";
@@ -99,6 +100,7 @@
   // ---- ALL MODE (TTS) ------------------------------------------------------
   async function renderAll(chapters) {
     elBar.style.display = "none"; // no dropdown / prev / next in all-mode
+    elBarBottom.style.display = "none";
     document.title = "All chapters \u2014 The Engineer's Root of Exile";
     elContent.innerHTML =
       '<div class="loading">Loading all ' +
