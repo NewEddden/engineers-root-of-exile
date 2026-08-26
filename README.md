@@ -1,6 +1,6 @@
 # The Engineer's Root of Exile
 
-Static site for the serial. No build step. Hosts on GitHub Pages as-is.
+Static site for the novel. Hosts on GitHub Pages as-is.
 
 ## Structure
 
@@ -9,19 +9,24 @@ engineers-root-of-exile-main/
 ├── index.html          Home
 ├── chapters.html       Table of contents (paginated + search)
 ├── read.html           Reader (single chapter, or all-on-one-page for TTS)
-├── characters.html     stub
-├── magic.html          stub
-├── world.html          stub
-├── glossary.html       stub
-├── about.html          stub
-├── chapters/           YOUR chapter files, unchanged: chapter-01.html ...
+├── characters.html
+├── magic.html
+├── world.html
+├── glossary.html
+├── about.html
+├── chapters/
+│      ├── Chapter-1.html
+│      ├── Chapter-2.html
+│      └── Chapter-....html
 └── assets/
-    ├── css/style.css
+    ├── css/
+    │   └── style.css
     ├── js/
     │   ├── data.js      shared loader/helpers
     │   ├── chapters.js  TOC page
     │   └── reader.js    reader page
-    ├── data/chapters.json   <-- the list every page reads from
+    ├── data/
+    │   └──chapters.json   <-- the list every page reads from
     └── images/
 ```
 
@@ -52,7 +57,7 @@ directly, point its own `<link>` at `../assets/css/style.css`.
   repo folder, then open `http://localhost:8000`. On GitHub Pages it's HTTP, so
   it just works.
 - **All-chapters mode + your TTS:** `read.html?view=all` fetches every chapter
-  and injects it into one page. Your TTS must read the *rendered* page (the DOM
+  and injects it into one page. Your TTS must read the _rendered_ page (the DOM
   after JavaScript runs), which browser-based readers do. If your TTS reads raw
   HTML source instead, it won't see the injected text and you'll need a
   pre-built combined file instead. Confirm this before relying on it.
