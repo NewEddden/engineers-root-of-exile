@@ -696,6 +696,9 @@ a.mini:hover {
     width: 100%;
     text-align: center;
   }
+  .eyebrow {
+    text-align: center;
+  }
 }
 
 @media (max-width: 560px) {
@@ -738,6 +741,9 @@ a.mini:hover {
   }
   .prose {
     font-size: 19px;
+  }
+  .eyebrow {
+    text-align: center;
   }
 }
 
