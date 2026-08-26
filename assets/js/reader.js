@@ -15,6 +15,29 @@
   const elNextBottom = document.getElementById("btn-next-bottom");
   const elSelectBottom = document.getElementById("chapter-select-bottom");
 
+  // Sets the system Now Playing metadata (Lock Screen, Control Center, CarPlay).
+  // Only has an effect where the page owns the audio session; harmless otherwise.
+  function setMediaMetadata(titleText) {
+    if (!("mediaSession" in navigator)) return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: titleText,
+      artist: "E. Cenatus",
+      album: "The Engineer's Root of Exile",
+      artwork: [
+        {
+          src: "assets/images/novel-cover-512.jpg",
+          sizes: "512x512",
+          type: "image/jpeg",
+        },
+        {
+          src: "assets/images/novel-cover-1024.jpg",
+          sizes: "1024x1024",
+          type: "image/jpeg",
+        },
+      ],
+    });
+  }
+
   async function extractContent(url) {
     const res = await fetch(url, { cache: "no-cache" });
     if (!res.ok) throw new Error(res.status + " fetching " + url);
@@ -73,6 +96,7 @@
 
     document.title =
       "Ch " + ch.n + ": " + ch.title + " \u2014 The Engineer's Root of Exile";
+    setMediaMetadata("Ch " + ch.n + ": " + ch.title);
 
     elContent.innerHTML = '<div class="loading">Loading chapter\u2026</div>';
     try {
@@ -102,6 +126,7 @@
     elBar.style.display = "none"; // no dropdown / prev / next in all-mode
     elBarBottom.style.display = "none";
     document.title = "All chapters \u2014 The Engineer's Root of Exile";
+    setMediaMetadata("The Engineer's Root of Exile");
     elContent.innerHTML =
       '<div class="loading">Loading all ' +
       chapters.length +
