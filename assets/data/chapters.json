@@ -578,6 +578,18 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-48",
+      "number": 48,
+      "n": 48,
+      "title": "The Road First",
+      "file": "chapters/chapter-48.html",
+      "slug": "chapter-48",
+      "date": "2026-08-30",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
