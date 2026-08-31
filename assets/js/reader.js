@@ -25,12 +25,12 @@
       album: "The Engineer's Root of Exile",
       artwork: [
         {
-          src: "assets/images/novel-cover-512.jpg",
+          src: "assets/images/novel-cover-512.png",
           sizes: "512x512",
           type: "image/jpeg",
         },
         {
-          src: "assets/images/novel-cover-1024.jpg",
+          src: "assets/images/novel-cover-1024.png",
           sizes: "1024x1024",
           type: "image/jpeg",
         },
