@@ -68,7 +68,7 @@ body {
   border: none;
   padding: 0;
   border-radius: 50%;
-  background: #222;
+  background: var(--gold-bright);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -87,12 +87,14 @@ body {
   transition: border-color 0.2s ease;
 }
 
-.up-Arrow:hover {
-  background: var(--gold-bright);
+.up-Arrow:hover,
+.up-Arrow:active {
+  background: #000;
 }
 
-.up-Arrow:hover::before {
-  border-color: #000;
+.up-Arrow:hover::before,
+.up-Arrow:active::before {
+  border-color: var(--gold-bright);
 }
 
 .up-Arrow:focus-visible {
