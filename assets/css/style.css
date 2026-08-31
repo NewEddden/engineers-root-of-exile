@@ -58,6 +58,48 @@ body {
   overflow-x: hidden; /* safety: nothing should push the page sideways */
 }
 
+/* Up arrow to reach the top of the pages (I hate scrolling up on pc and tapping the top bar works on phones lol) */
+.up-Arrow {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background: #222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: background 0.2s ease;
+}
+
+.up-Arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: translateY(2px) rotate(45deg);
+  transition: border-color 0.2s ease;
+}
+
+.up-Arrow:hover {
+  background: var(--gold-bright);
+}
+
+.up-Arrow:hover::before {
+  border-color: #000;
+}
+
+.up-Arrow:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+/* --------- */
 img,
 svg {
   max-width: 100%;
@@ -699,6 +741,9 @@ a.mini:hover {
   .eyebrow {
     text-align: center;
   }
+  .up-Arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 560px) {
@@ -744,6 +789,9 @@ a.mini:hover {
   }
   .eyebrow {
     text-align: center;
+  }
+  .up-Arrow {
+    display: none;
   }
 }
 
