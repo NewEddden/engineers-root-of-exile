@@ -590,6 +590,30 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-50",
+      "number": 50,
+      "n": 50,
+      "title": "That Same Water",
+      "file": "chapters/chapter-50.html",
+      "slug": "chapter-50",
+      "date": "2026-09-01",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-51",
+      "number": 51,
+      "n": 51,
+      "title": "That Same Water",
+      "file": "chapters/chapter-51.html",
+      "slug": "chapter-51",
+      "date": "2026-09-01",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
