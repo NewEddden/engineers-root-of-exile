@@ -698,6 +698,30 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-59",
+      "number": 59,
+      "n": 59,
+      "title": "The Ink, Aimed",
+      "file": "chapters/chapter-59.html",
+      "slug": "chapter-59",
+      "date": "2026-09-02",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-60",
+      "number": 60,
+      "n": 60,
+      "title": "Down From the Tower",
+      "file": "chapters/chapter-60.html",
+      "slug": "chapter-60",
+      "date": "2026-09-02",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
