@@ -662,6 +662,18 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-56",
+      "number": 56, 
+      "n": 56,
+      "title": "The Dead Air",
+      "file": "chapters/chapter-56.html",
+      "slug": "chapter-56",
+      "date": "2026-09-02",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
