@@ -722,6 +722,126 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-61",
+      "number": 61,
+      "n": 61,
+      "title": "The Weight of the Stone",
+      "file": "chapters/chapter-61.html",
+      "slug": "chapter-61",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-62",
+      "number": 62,
+      "n": 62,
+      "title": "The Crown's Share",
+      "file": "chapters/chapter-62.html",
+      "slug": "chapter-62",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-63",
+      "number": 63,
+      "n": 63,
+      "title": "The Dead Man's Hand",
+      "file": "chapters/chapter-63.html",
+      "slug": "chapter-63",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-64",
+      "number": 64,
+      "n": 64,
+      "title": "A Name That Points Up",
+      "file": "chapters/chapter-64.html",
+      "slug": "chapter-64",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-65",
+      "number": 65,
+      "n": 65,
+      "title": "Too Personal for Status",
+      "file": "chapters/chapter-65.html",
+      "slug": "chapter-65",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-66",
+      "number": 66,
+      "n": 66,
+      "title": "The Same Sin",
+      "file": "chapters/chapter-66.html",
+      "slug": "chapter-66",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-67",
+      "number": 67,
+      "n": 67,
+      "title": "Off the Books",
+      "file": "chapters/chapter-67.html",
+      "slug": "chapter-67",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-68",
+      "number": 68,
+      "n": 68,
+      "title": "The Faculty and the Physician",
+      "file": "chapters/chapter-68.html",
+      "slug": "chapter-68",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-69",
+      "number": 69,
+      "n": 69,
+      "title": "A Traveling Cleric",
+      "file": "chapters/chapter-69.html",
+      "slug": "chapter-69",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-70",
+      "number": 70,
+      "n": 70,
+      "title": "The Iron Road Opens",
+      "file": "chapters/chapter-70.html",
+      "slug": "chapter-70",
+      "date": "2026-09-03",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
