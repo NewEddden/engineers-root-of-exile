@@ -1022,6 +1022,30 @@
       "words": 0,
       "minutes": 0,
       "status": "published"
+    },
+    {
+      "id": "ch-86",
+      "number": 86,
+      "n": 86,
+      "title": "The Ride He Did Not Take",
+      "file": "chapters/chapter-86.html",
+      "slug": "chapter-86",
+      "date": "2026-09-04",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
+    },
+    {
+      "id": "ch-87",
+      "number": 87,
+      "n": 87,
+      "title": "What He Could Not Recall",
+      "file": "chapters/chapter-87.html",
+      "slug": "chapter-87",
+      "date": "2026-09-04",
+      "words": 0,
+      "minutes": 0,
+      "status": "published"
     }
   ]
 }
