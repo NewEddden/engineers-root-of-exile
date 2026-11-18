@@ -326,6 +326,18 @@
       "words": 3784,
       "minutes": 15,
       "status": "published"
+    },
+    {
+      "id": "ch-28",
+      "number": 28,
+      "n": 28,
+      "title": "Book 3, Batch 9: With",
+      "file": "chapters/chapter-28.html",
+      "slug": "chapter-28",
+      "date": "2026-11-18",
+      "words": 4759,
+      "minutes": 19,
+      "status": "published"
     }
   ]
 }
