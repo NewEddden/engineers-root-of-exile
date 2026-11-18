@@ -62,6 +62,18 @@
       "words": 8131,
       "minutes": 33,
       "status": "published"
+    },
+    {
+      "id": "ch-06",
+      "number": 6,
+      "n": 6,
+      "title": "Book 2, Batch 6: Downwind",
+      "file": "chapters/chapter-06.html",
+      "slug": "chapter-06",
+      "date": "2026-11-18",
+      "words": 5762,
+      "minutes": 23,
+      "status": "published"
     }
   ]
 }
