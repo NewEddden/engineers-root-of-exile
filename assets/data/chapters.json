@@ -182,6 +182,18 @@
       "words": 8250,
       "minutes": 33,
       "status": "published"
+    },
+    {
+      "id": "ch-16",
+      "number": 16,
+      "n": 16,
+      "title": "Book 2, Batch 16: Sunday",
+      "file": "chapters/chapter-16.html",
+      "slug": "chapter-16",
+      "date": "2026-11-18",
+      "words": 9016,
+      "minutes": 36,
+      "status": "published"
     }
   ]
 }
