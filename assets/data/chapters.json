@@ -26,6 +26,18 @@
       "words": 8560,
       "minutes": 34,
       "status": "published"
+    },
+    {
+      "id": "ch-03",
+      "number": 3,
+      "n": 3,
+      "title": "Book 2, Batch 3: Below",
+      "file": "chapters/chapter-03.html",
+      "slug": "chapter-03",
+      "date": "2026-11-18",
+      "words": 6738,
+      "minutes": 27,
+      "status": "published"
     }
   ]
 }
