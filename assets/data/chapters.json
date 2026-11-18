@@ -122,6 +122,18 @@
       "words": 7762,
       "minutes": 31,
       "status": "published"
+    },
+    {
+      "id": "ch-11",
+      "number": 11,
+      "n": 11,
+      "title": "Book 2, Batch 11: Grounded",
+      "file": "chapters/chapter-11.html",
+      "slug": "chapter-11",
+      "date": "2026-11-18",
+      "words": 3901,
+      "minutes": 16,
+      "status": "published"
     }
   ]
 }
