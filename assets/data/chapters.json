@@ -170,6 +170,18 @@
       "words": 5177,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-15",
+      "number": 15,
+      "n": 15,
+      "title": "Book 2, Batch 15: Colder Than the Listening",
+      "file": "chapters/chapter-15.html",
+      "slug": "chapter-15",
+      "date": "2026-11-18",
+      "words": 8250,
+      "minutes": 33,
+      "status": "published"
     }
   ]
 }
