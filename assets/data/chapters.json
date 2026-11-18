@@ -50,6 +50,18 @@
       "words": 7395,
       "minutes": 30,
       "status": "published"
+    },
+    {
+      "id": "ch-05",
+      "number": 5,
+      "n": 5,
+      "title": "Book 2, Batch 5: The Door",
+      "file": "chapters/chapter-05.html",
+      "slug": "chapter-05",
+      "date": "2026-11-18",
+      "words": 8131,
+      "minutes": 33,
+      "status": "published"
     }
   ]
 }
