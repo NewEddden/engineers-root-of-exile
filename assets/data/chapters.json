@@ -314,6 +314,18 @@
       "words": 6349,
       "minutes": 25,
       "status": "published"
+    },
+    {
+      "id": "ch-27",
+      "number": 27,
+      "n": 27,
+      "title": "Book 3, Batch 8: Older Than the Kingdom",
+      "file": "chapters/chapter-27.html",
+      "slug": "chapter-27",
+      "date": "2026-11-18",
+      "words": 3784,
+      "minutes": 15,
+      "status": "published"
     }
   ]
 }
