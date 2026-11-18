@@ -194,6 +194,18 @@
       "words": 9016,
       "minutes": 36,
       "status": "published"
+    },
+    {
+      "id": "ch-17",
+      "number": 17,
+      "n": 17,
+      "title": "Book 2, Batch 17: The Reckoning",
+      "file": "chapters/chapter-17.html",
+      "slug": "chapter-17",
+      "date": "2026-11-18",
+      "words": 10639,
+      "minutes": 43,
+      "status": "published"
     }
   ]
 }
