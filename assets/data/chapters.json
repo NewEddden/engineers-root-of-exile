@@ -254,6 +254,18 @@
       "words": 7309,
       "minutes": 29,
       "status": "published"
+    },
+    {
+      "id": "ch-22",
+      "number": 22,
+      "n": 22,
+      "title": "Book 3, Batch 3: Struck",
+      "file": "chapters/chapter-22.html",
+      "slug": "chapter-22",
+      "date": "2026-11-18",
+      "words": 6517,
+      "minutes": 26,
+      "status": "published"
     }
   ]
 }
