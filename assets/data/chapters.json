@@ -98,6 +98,18 @@
       "words": 5801,
       "minutes": 23,
       "status": "published"
+    },
+    {
+      "id": "ch-09",
+      "number": 9,
+      "n": 9,
+      "title": "Book 2, Batch 9: Two out of Three",
+      "file": "chapters/chapter-09.html",
+      "slug": "chapter-09",
+      "date": "2026-11-18",
+      "words": 6314,
+      "minutes": 25,
+      "status": "published"
     }
   ]
 }
