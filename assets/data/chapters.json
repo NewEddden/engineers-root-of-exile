@@ -266,6 +266,18 @@
       "words": 6517,
       "minutes": 26,
       "status": "published"
+    },
+    {
+      "id": "ch-23",
+      "number": 23,
+      "n": 23,
+      "title": "Book 3, Batch 4: Ninety Days",
+      "file": "chapters/chapter-23.html",
+      "slug": "chapter-23",
+      "date": "2026-11-18",
+      "words": 5264,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
