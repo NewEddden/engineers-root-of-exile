@@ -38,6 +38,18 @@
       "words": 6738,
       "minutes": 27,
       "status": "published"
+    },
+    {
+      "id": "ch-04",
+      "number": 4,
+      "n": 4,
+      "title": "Book 2, Batch 4: Named",
+      "file": "chapters/chapter-04.html",
+      "slug": "chapter-04",
+      "date": "2026-11-18",
+      "words": 7395,
+      "minutes": 30,
+      "status": "published"
     }
   ]
 }
