@@ -74,6 +74,18 @@
       "words": 5762,
       "minutes": 23,
       "status": "published"
+    },
+    {
+      "id": "ch-07",
+      "number": 7,
+      "n": 7,
+      "title": "Book 2, Batch 7: Five Knocks",
+      "file": "chapters/chapter-07.html",
+      "slug": "chapter-07",
+      "date": "2026-11-18",
+      "words": 4485,
+      "minutes": 18,
+      "status": "published"
     }
   ]
 }
