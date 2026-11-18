@@ -362,6 +362,18 @@
       "words": 5836,
       "minutes": 23,
       "status": "published"
+    },
+    {
+      "id": "ch-31",
+      "number": 31,
+      "n": 31,
+      "title": "Book 3, Batch 12: Blood",
+      "file": "chapters/chapter-31.html",
+      "slug": "chapter-31",
+      "date": "2026-11-18",
+      "words": 4176,
+      "minutes": 17,
+      "status": "published"
     }
   ]
 }
