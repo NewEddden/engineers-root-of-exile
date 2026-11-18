@@ -302,6 +302,18 @@
       "words": 4593,
       "minutes": 18,
       "status": "published"
+    },
+    {
+      "id": "ch-26",
+      "number": 26,
+      "n": 26,
+      "title": "Book 3, Batch 7: The Year They Have",
+      "file": "chapters/chapter-26.html",
+      "slug": "chapter-26",
+      "date": "2026-11-18",
+      "words": 6349,
+      "minutes": 25,
+      "status": "published"
     }
   ]
 }
