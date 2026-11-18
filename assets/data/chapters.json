@@ -14,6 +14,18 @@
       "words": 7639,
       "minutes": 31,
       "status": "published"
+    },
+    {
+      "id": "ch-02",
+      "number": 2,
+      "n": 2,
+      "title": "Book 2, Batch 2: Terms",
+      "file": "chapters/chapter-02.html",
+      "slug": "chapter-02",
+      "date": "2026-11-18",
+      "words": 8560,
+      "minutes": 34,
+      "status": "published"
     }
   ]
 }
