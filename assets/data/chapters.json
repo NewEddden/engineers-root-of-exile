@@ -146,6 +146,18 @@
       "words": 5297,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-13",
+      "number": 13,
+      "n": 13,
+      "title": "Book 2, Batch 13: The Returning Current",
+      "file": "chapters/chapter-13.html",
+      "slug": "chapter-13",
+      "date": "2026-11-18",
+      "words": 6402,
+      "minutes": 26,
+      "status": "published"
     }
   ]
 }
