@@ -158,6 +158,18 @@
       "words": 6402,
       "minutes": 26,
       "status": "published"
+    },
+    {
+      "id": "ch-14",
+      "number": 14,
+      "n": 14,
+      "title": "Book 2, Batch 14: When I Come Back",
+      "file": "chapters/chapter-14.html",
+      "slug": "chapter-14",
+      "date": "2026-11-18",
+      "words": 5177,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
