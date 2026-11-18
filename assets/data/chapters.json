@@ -278,6 +278,18 @@
       "words": 5264,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-24",
+      "number": 24,
+      "n": 24,
+      "title": "Book 3, Batch 5: Where's My Wife",
+      "file": "chapters/chapter-24.html",
+      "slug": "chapter-24",
+      "date": "2026-11-18",
+      "words": 7943,
+      "minutes": 32,
+      "status": "published"
     }
   ]
 }
