@@ -230,6 +230,18 @@
       "words": 5152,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-20",
+      "number": 20,
+      "n": 20,
+      "title": "Book 3, Batch 1: Middle Ground",
+      "file": "chapters/chapter-20.html",
+      "slug": "chapter-20",
+      "date": "2026-11-18",
+      "words": 6022,
+      "minutes": 24,
+      "status": "published"
     }
   ]
 }
