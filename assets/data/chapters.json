@@ -338,6 +338,18 @@
       "words": 4759,
       "minutes": 19,
       "status": "published"
+    },
+    {
+      "id": "ch-29",
+      "number": 29,
+      "n": 29,
+      "title": "Book 3, Batch 10: Needs",
+      "file": "chapters/chapter-29.html",
+      "slug": "chapter-29",
+      "date": "2026-11-18",
+      "words": 4317,
+      "minutes": 17,
+      "status": "published"
     }
   ]
 }
