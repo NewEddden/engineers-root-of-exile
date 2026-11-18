@@ -242,6 +242,18 @@
       "words": 6022,
       "minutes": 24,
       "status": "published"
+    },
+    {
+      "id": "ch-21",
+      "number": 21,
+      "n": 21,
+      "title": "Book 3, Batch 2: Drift",
+      "file": "chapters/chapter-21.html",
+      "slug": "chapter-21",
+      "date": "2026-11-18",
+      "words": 7309,
+      "minutes": 29,
+      "status": "published"
     }
   ]
 }
