@@ -218,6 +218,18 @@
       "words": 7394,
       "minutes": 30,
       "status": "published"
+    },
+    {
+      "id": "ch-19",
+      "number": 19,
+      "n": 19,
+      "title": "Book 2, Batch 19: The Answer",
+      "file": "chapters/chapter-19.html",
+      "slug": "chapter-19",
+      "date": "2026-11-18",
+      "words": 5152,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
