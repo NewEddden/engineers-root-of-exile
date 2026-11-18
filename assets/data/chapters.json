@@ -110,6 +110,18 @@
       "words": 6314,
       "minutes": 25,
       "status": "published"
+    },
+    {
+      "id": "ch-10",
+      "number": 10,
+      "n": 10,
+      "title": "Book 2, Batch 10: The Last Dawn",
+      "file": "chapters/chapter-10.html",
+      "slug": "chapter-10",
+      "date": "2026-11-18",
+      "words": 7762,
+      "minutes": 31,
+      "status": "published"
     }
   ]
 }
