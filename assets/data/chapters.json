@@ -290,6 +290,18 @@
       "words": 7943,
       "minutes": 32,
       "status": "published"
+    },
+    {
+      "id": "ch-25",
+      "number": 25,
+      "n": 25,
+      "title": "Book 3, Batch 6: The Courts",
+      "file": "chapters/chapter-25.html",
+      "slug": "chapter-25",
+      "date": "2026-11-18",
+      "words": 4593,
+      "minutes": 18,
+      "status": "published"
     }
   ]
 }
