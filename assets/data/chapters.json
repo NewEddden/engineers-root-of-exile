@@ -386,6 +386,18 @@
       "words": 3913,
       "minutes": 16,
       "status": "published"
+    },
+    {
+      "id": "ch-33",
+      "number": 33,
+      "n": 33,
+      "title": "Book 3, Batch 14: The Shortest Line",
+      "file": "chapters/chapter-33.html",
+      "slug": "chapter-33",
+      "date": "2026-11-18",
+      "words": 5537,
+      "minutes": 22,
+      "status": "published"
     }
   ]
 }
