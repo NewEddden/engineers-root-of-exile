@@ -398,6 +398,18 @@
       "words": 5545,
       "minutes": 22,
       "status": "published"
+    },
+    {
+      "id": "ch-34",
+      "number": 34,
+      "n": 34,
+      "title": "Book 3, Batch 15: The Everywhere Night",
+      "file": "chapters/chapter-34.html",
+      "slug": "chapter-34",
+      "date": "2026-11-18",
+      "words": 4361,
+      "minutes": 17,
+      "status": "published"
     }
   ]
 }
