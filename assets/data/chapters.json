@@ -410,6 +410,18 @@
       "words": 4361,
       "minutes": 17,
       "status": "published"
+    },
+    {
+      "id": "ch-35",
+      "number": 35,
+      "n": 35,
+      "title": "Book 3, Batch 16: The Vault",
+      "file": "chapters/chapter-35.html",
+      "slug": "chapter-35",
+      "date": "2026-11-18",
+      "words": 2603,
+      "minutes": 10,
+      "status": "published"
     }
   ]
 }
