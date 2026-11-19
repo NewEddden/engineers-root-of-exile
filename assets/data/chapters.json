@@ -422,6 +422,18 @@
       "words": 2603,
       "minutes": 10,
       "status": "published"
+    },
+    {
+      "id": "ch-36",
+      "number": 36,
+      "n": 36,
+      "title": "Book 3, Batch 17: The Crypt",
+      "file": "chapters/chapter-36.html",
+      "slug": "chapter-36",
+      "date": "2026-11-18",
+      "words": 1898,
+      "minutes": 8,
+      "status": "published"
     }
   ]
 }
