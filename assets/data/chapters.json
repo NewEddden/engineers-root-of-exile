@@ -446,6 +446,18 @@
       "words": 2503,
       "minutes": 10,
       "status": "published"
+    },
+    {
+      "id": "ch-38",
+      "number": 38,
+      "n": 38,
+      "title": "Book 3, Batch 19: Whole",
+      "file": "chapters/chapter-38.html",
+      "slug": "chapter-38",
+      "date": "2026-11-18",
+      "words": 2239,
+      "minutes": 9,
+      "status": "published"
     }
   ]
 }
