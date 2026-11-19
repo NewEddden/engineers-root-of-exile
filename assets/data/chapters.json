@@ -458,6 +458,18 @@
       "words": 2239,
       "minutes": 9,
       "status": "published"
+    },
+    {
+      "id": "ch-39",
+      "number": 39,
+      "n": 39,
+      "title": "Book 3, Batch 20: The Line Going Up",
+      "file": "chapters/chapter-39.html",
+      "slug": "chapter-39",
+      "date": "2026-11-18",
+      "words": 2039,
+      "minutes": 8,
+      "status": "published"
     }
   ]
 }
