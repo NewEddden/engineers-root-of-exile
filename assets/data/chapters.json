@@ -434,6 +434,18 @@
       "words": 1898,
       "minutes": 8,
       "status": "published"
+    },
+    {
+      "id": "ch-37",
+      "number": 37,
+      "n": 37,
+      "title": "Book 3, Batch 18: The Year in the Room",
+      "file": "chapters/chapter-37.html",
+      "slug": "chapter-37",
+      "date": "2026-11-18",
+      "words": 2503,
+      "minutes": 10,
+      "status": "published"
     }
   ]
 }
