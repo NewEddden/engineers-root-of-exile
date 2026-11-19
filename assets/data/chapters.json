@@ -374,6 +374,18 @@
       "words": 4176,
       "minutes": 17,
       "status": "published"
+    },
+    {
+      "id": "ch-32",
+      "number": 32,
+      "n": 32,
+      "title": "Book 3, Batch 13: The Gathering",
+      "file": "chapters/chapter-32.html",
+      "slug": "chapter-32",
+      "date": "2026-11-18",
+      "words": 3913,
+      "minutes": 16,
+      "status": "published"
     }
   ]
 }
