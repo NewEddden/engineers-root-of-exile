@@ -470,6 +470,18 @@
       "words": 2394,
       "minutes": 10,
       "status": "published"
+    },
+    {
+      "id": "ch-40",
+      "number": 40,
+      "n": 40,
+      "title": "Book 2, Chapter 1: The Wall Water",
+      "file": "chapters/chapter-40.html",
+      "slug": "chapter-40",
+      "date": "2026-11-20",
+      "words": 7093,
+      "minutes": 28,
+      "status": "published"
     }
   ]
 }
