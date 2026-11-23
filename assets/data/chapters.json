@@ -530,6 +530,18 @@
       "words": 3894,
       "minutes": 16,
       "status": "published"
+    },
+    {
+      "id": "ch-45",
+      "number": 45,
+      "n": 45,
+      "title": "Book 2, Chapter 6: Sohra",
+      "file": "chapters/chapter-45.html",
+      "slug": "chapter-45",
+      "date": "2026-11-23",
+      "words": 6028,
+      "minutes": 24,
+      "status": "published"
     }
   ]
 }
