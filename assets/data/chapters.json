@@ -506,6 +506,18 @@
       "words": 4859,
       "minutes": 19,
       "status": "published"
+    },
+    {
+      "id": "ch-43",
+      "number": 43,
+      "n": 43,
+      "title": "Book 2, Chapter 4: Thick Water",
+      "file": "chapters/chapter-43.html",
+      "slug": "chapter-43",
+      "date": "2026-11-23",
+      "words": 6265,
+      "minutes": 25,
+      "status": "published"
     }
   ]
 }
