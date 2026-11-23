@@ -566,6 +566,18 @@
       "words": 5559,
       "minutes": 22,
       "status": "published"
+    },
+    {
+      "id": "ch-48",
+      "number": 48,
+      "n": 48,
+      "title": "Book 2, Chapter 9: The Door",
+      "file": "chapters/chapter-48.html",
+      "slug": "chapter-48",
+      "date": "2026-11-23",
+      "words": 5403,
+      "minutes": 22,
+      "status": "published"
     }
   ]
 }
