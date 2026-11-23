@@ -202,8 +202,8 @@
       "title": "Book 2, Batch 17: The Reckoning",
       "file": "chapters/chapter-17.html",
       "slug": "chapter-17",
-      "date": "2026-11-18",
-      "words": 10628,
+      "date": "2026-11-23",
+      "words": 10794,
       "minutes": 43,
       "status": "published"
     },
@@ -214,8 +214,8 @@
       "title": "Book 2, Batch 18: The Isle",
       "file": "chapters/chapter-18.html",
       "slug": "chapter-18",
-      "date": "2026-11-18",
-      "words": 7384,
+      "date": "2026-11-23",
+      "words": 7501,
       "minutes": 30,
       "status": "published"
     },
@@ -238,8 +238,8 @@
       "title": "Book 3, Batch 1: Middle Ground",
       "file": "chapters/chapter-20.html",
       "slug": "chapter-20",
-      "date": "2026-11-19",
-      "words": 6127,
+      "date": "2026-11-23",
+      "words": 6272,
       "minutes": 25,
       "status": "published"
     },
@@ -250,8 +250,8 @@
       "title": "Book 3, Batch 2: Drift",
       "file": "chapters/chapter-21.html",
       "slug": "chapter-21",
-      "date": "2026-11-19",
-      "words": 7379,
+      "date": "2026-11-23",
+      "words": 7433,
       "minutes": 30,
       "status": "published"
     },
@@ -262,9 +262,9 @@
       "title": "Book 3, Batch 3: Struck",
       "file": "chapters/chapter-22.html",
       "slug": "chapter-22",
-      "date": "2026-11-18",
-      "words": 6506,
-      "minutes": 26,
+      "date": "2026-11-23",
+      "words": 6680,
+      "minutes": 27,
       "status": "published"
     },
     {
@@ -274,8 +274,8 @@
       "title": "Book 3, Batch 4: Ninety Days",
       "file": "chapters/chapter-23.html",
       "slug": "chapter-23",
-      "date": "2026-11-19",
-      "words": 6011,
+      "date": "2026-11-23",
+      "words": 6078,
       "minutes": 24,
       "status": "published"
     },
@@ -298,9 +298,9 @@
       "title": "Book 3, Batch 6: The Courts",
       "file": "chapters/chapter-25.html",
       "slug": "chapter-25",
-      "date": "2026-11-19",
-      "words": 5054,
-      "minutes": 20,
+      "date": "2026-11-23",
+      "words": 5139,
+      "minutes": 21,
       "status": "published"
     },
     {
@@ -310,8 +310,8 @@
       "title": "Book 3, Batch 7: The Year They Have",
       "file": "chapters/chapter-26.html",
       "slug": "chapter-26",
-      "date": "2026-11-19",
-      "words": 6626,
+      "date": "2026-11-23",
+      "words": 6714,
       "minutes": 27,
       "status": "published"
     },
@@ -322,9 +322,9 @@
       "title": "Book 3, Batch 8: Older Than the Kingdom",
       "file": "chapters/chapter-27.html",
       "slug": "chapter-27",
-      "date": "2026-11-18",
-      "words": 3775,
-      "minutes": 15,
+      "date": "2026-11-23",
+      "words": 3918,
+      "minutes": 16,
       "status": "published"
     },
     {
@@ -334,9 +334,9 @@
       "title": "Book 3, Batch 9: With",
       "file": "chapters/chapter-28.html",
       "slug": "chapter-28",
-      "date": "2026-11-19",
-      "words": 5083,
-      "minutes": 20,
+      "date": "2026-11-23",
+      "words": 5254,
+      "minutes": 21,
       "status": "published"
     },
     {
@@ -346,8 +346,8 @@
       "title": "Book 3, Batch 10: Needs",
       "file": "chapters/chapter-29.html",
       "slug": "chapter-29",
-      "date": "2026-11-19",
-      "words": 4497,
+      "date": "2026-11-23",
+      "words": 4587,
       "minutes": 18,
       "status": "published"
     },
@@ -358,8 +358,8 @@
       "title": "Book 3, Batch 11: Dates",
       "file": "chapters/chapter-30.html",
       "slug": "chapter-30",
-      "date": "2026-11-19",
-      "words": 6168,
+      "date": "2026-11-23",
+      "words": 6292,
       "minutes": 25,
       "status": "published"
     },
@@ -382,9 +382,9 @@
       "title": "Book 3, Batch 13: The Gathering",
       "file": "chapters/chapter-32.html",
       "slug": "chapter-32",
-      "date": "2026-11-19",
-      "words": 4214,
-      "minutes": 17,
+      "date": "2026-11-23",
+      "words": 4461,
+      "minutes": 18,
       "status": "published"
     },
     {
@@ -394,9 +394,9 @@
       "title": "Book 3, Batch 14: The Shortest Line",
       "file": "chapters/chapter-33.html",
       "slug": "chapter-33",
-      "date": "2026-11-21",
-      "words": 5924,
-      "minutes": 24,
+      "date": "2026-11-23",
+      "words": 6143,
+      "minutes": 25,
       "status": "published"
     },
     {
@@ -430,8 +430,8 @@
       "title": "Book 3, Batch 17: The Crypt",
       "file": "chapters/chapter-36.html",
       "slug": "chapter-36",
-      "date": "2026-11-18",
-      "words": 1898,
+      "date": "2026-11-23",
+      "words": 1928,
       "minutes": 8,
       "status": "published"
     },
@@ -442,9 +442,9 @@
       "title": "Book 3, Batch 18: The Year in the Room",
       "file": "chapters/chapter-37.html",
       "slug": "chapter-37",
-      "date": "2026-11-19",
-      "words": 2632,
-      "minutes": 11,
+      "date": "2026-11-23",
+      "words": 2994,
+      "minutes": 12,
       "status": "published"
     },
     {
@@ -454,8 +454,8 @@
       "title": "Book 3, Batch 19: Whole",
       "file": "chapters/chapter-38.html",
       "slug": "chapter-38",
-      "date": "2026-11-21",
-      "words": 2399,
+      "date": "2026-11-23",
+      "words": 2442,
       "minutes": 10,
       "status": "published"
     },
@@ -466,8 +466,8 @@
       "title": "Book 3, Batch 20: The Line Going Up",
       "file": "chapters/chapter-39.html",
       "slug": "chapter-39",
-      "date": "2026-11-19",
-      "words": 2394,
+      "date": "2026-11-23",
+      "words": 2520,
       "minutes": 10,
       "status": "published"
     },
