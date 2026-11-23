@@ -482,6 +482,18 @@
       "words": 7093,
       "minutes": 28,
       "status": "published"
+    },
+    {
+      "id": "ch-41",
+      "number": 41,
+      "n": 41,
+      "title": "Book 2, Chapter 2: Two Places at Once",
+      "file": "chapters/chapter-41.html",
+      "slug": "chapter-41",
+      "date": "2026-11-23",
+      "words": 4345,
+      "minutes": 17,
+      "status": "published"
     }
   ]
 }
