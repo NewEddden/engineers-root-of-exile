@@ -554,6 +554,18 @@
       "words": 6251,
       "minutes": 25,
       "status": "published"
+    },
+    {
+      "id": "ch-47",
+      "number": 47,
+      "n": 47,
+      "title": "Book 2, Chapter 8: The Ring",
+      "file": "chapters/chapter-47.html",
+      "slug": "chapter-47",
+      "date": "2026-11-23",
+      "words": 5559,
+      "minutes": 22,
+      "status": "published"
     }
   ]
 }
