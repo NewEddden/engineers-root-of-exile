@@ -494,6 +494,18 @@
       "words": 4345,
       "minutes": 17,
       "status": "published"
+    },
+    {
+      "id": "ch-42",
+      "number": 42,
+      "n": 42,
+      "title": "Book 2, Chapter 3: The Regent",
+      "file": "chapters/chapter-42.html",
+      "slug": "chapter-42",
+      "date": "2026-11-23",
+      "words": 4859,
+      "minutes": 19,
+      "status": "published"
     }
   ]
 }
