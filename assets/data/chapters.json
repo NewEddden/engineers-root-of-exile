@@ -542,6 +542,18 @@
       "words": 6028,
       "minutes": 24,
       "status": "published"
+    },
+    {
+      "id": "ch-46",
+      "number": 46,
+      "n": 46,
+      "title": "Book 2, Chapter 7: The Bill",
+      "file": "chapters/chapter-46.html",
+      "slug": "chapter-46",
+      "date": "2026-11-23",
+      "words": 6251,
+      "minutes": 25,
+      "status": "published"
     }
   ]
 }
