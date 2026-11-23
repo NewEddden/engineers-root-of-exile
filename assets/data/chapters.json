@@ -518,6 +518,18 @@
       "words": 6265,
       "minutes": 25,
       "status": "published"
+    },
+    {
+      "id": "ch-44",
+      "number": 44,
+      "n": 44,
+      "title": "Book 2, Chapter 5: Once Until One Dies",
+      "file": "chapters/chapter-44.html",
+      "slug": "chapter-44",
+      "date": "2026-11-23",
+      "words": 3894,
+      "minutes": 16,
+      "status": "published"
     }
   ]
 }
