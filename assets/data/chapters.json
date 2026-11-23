@@ -34,9 +34,9 @@
       "title": "Book 2, Batch 3: Below",
       "file": "chapters/chapter-03.html",
       "slug": "chapter-03",
-      "date": "2026-11-19",
-      "words": 6823,
-      "minutes": 27,
+      "date": "2026-11-23",
+      "words": 6979,
+      "minutes": 28,
       "status": "published"
     },
     {
@@ -46,8 +46,8 @@
       "title": "Book 2, Batch 4: Named",
       "file": "chapters/chapter-04.html",
       "slug": "chapter-04",
-      "date": "2026-11-18",
-      "words": 7387,
+      "date": "2026-11-23",
+      "words": 7536,
       "minutes": 30,
       "status": "published"
     },
@@ -178,8 +178,8 @@
       "title": "Book 2, Batch 15: Colder Than the Listening",
       "file": "chapters/chapter-15.html",
       "slug": "chapter-15",
-      "date": "2026-11-18",
-      "words": 8242,
+      "date": "2026-11-23",
+      "words": 8306,
       "minutes": 33,
       "status": "published"
     },
@@ -190,8 +190,8 @@
       "title": "Book 2, Batch 16: Sunday",
       "file": "chapters/chapter-16.html",
       "slug": "chapter-16",
-      "date": "2026-11-18",
-      "words": 9008,
+      "date": "2026-11-23",
+      "words": 9097,
       "minutes": 36,
       "status": "published"
     },
@@ -203,8 +203,8 @@
       "file": "chapters/chapter-17.html",
       "slug": "chapter-17",
       "date": "2026-11-23",
-      "words": 10794,
-      "minutes": 43,
+      "words": 11375,
+      "minutes": 46,
       "status": "published"
     },
     {
@@ -215,7 +215,7 @@
       "file": "chapters/chapter-18.html",
       "slug": "chapter-18",
       "date": "2026-11-23",
-      "words": 7501,
+      "words": 7613,
       "minutes": 30,
       "status": "published"
     },
@@ -226,8 +226,8 @@
       "title": "Book 2, Batch 19: The Answer",
       "file": "chapters/chapter-19.html",
       "slug": "chapter-19",
-      "date": "2026-11-18",
-      "words": 5148,
+      "date": "2026-11-23",
+      "words": 5217,
       "minutes": 21,
       "status": "published"
     },
@@ -239,7 +239,7 @@
       "file": "chapters/chapter-20.html",
       "slug": "chapter-20",
       "date": "2026-11-23",
-      "words": 6272,
+      "words": 6372,
       "minutes": 25,
       "status": "published"
     },
@@ -251,7 +251,7 @@
       "file": "chapters/chapter-21.html",
       "slug": "chapter-21",
       "date": "2026-11-23",
-      "words": 7433,
+      "words": 7563,
       "minutes": 30,
       "status": "published"
     },
@@ -263,7 +263,7 @@
       "file": "chapters/chapter-22.html",
       "slug": "chapter-22",
       "date": "2026-11-23",
-      "words": 6680,
+      "words": 6781,
       "minutes": 27,
       "status": "published"
     },
@@ -275,8 +275,8 @@
       "file": "chapters/chapter-23.html",
       "slug": "chapter-23",
       "date": "2026-11-23",
-      "words": 6078,
-      "minutes": 24,
+      "words": 6207,
+      "minutes": 25,
       "status": "published"
     },
     {
@@ -286,8 +286,8 @@
       "title": "Book 3, Batch 5: Where's My Wife",
       "file": "chapters/chapter-24.html",
       "slug": "chapter-24",
-      "date": "2026-11-19",
-      "words": 8702,
+      "date": "2026-11-23",
+      "words": 8746,
       "minutes": 35,
       "status": "published"
     },
@@ -347,8 +347,8 @@
       "file": "chapters/chapter-29.html",
       "slug": "chapter-29",
       "date": "2026-11-23",
-      "words": 4587,
-      "minutes": 18,
+      "words": 4821,
+      "minutes": 19,
       "status": "published"
     },
     {
@@ -359,8 +359,8 @@
       "file": "chapters/chapter-30.html",
       "slug": "chapter-30",
       "date": "2026-11-23",
-      "words": 6292,
-      "minutes": 25,
+      "words": 6379,
+      "minutes": 26,
       "status": "published"
     },
     {
@@ -383,8 +383,8 @@
       "file": "chapters/chapter-32.html",
       "slug": "chapter-32",
       "date": "2026-11-23",
-      "words": 4461,
-      "minutes": 18,
+      "words": 4666,
+      "minutes": 19,
       "status": "published"
     },
     {
@@ -406,9 +406,9 @@
       "title": "Book 3, Batch 15: The Everywhere Night",
       "file": "chapters/chapter-34.html",
       "slug": "chapter-34",
-      "date": "2026-11-19",
-      "words": 4583,
-      "minutes": 18,
+      "date": "2026-11-23",
+      "words": 4854,
+      "minutes": 19,
       "status": "published"
     },
     {
