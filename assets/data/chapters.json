@@ -602,6 +602,18 @@
       "words": 5527,
       "minutes": 22,
       "status": "published"
+    },
+    {
+      "id": "ch-51",
+      "number": 51,
+      "n": 51,
+      "title": "Book 2, Chapter 12: The Dry Hall",
+      "file": "chapters/chapter-51.html",
+      "slug": "chapter-51",
+      "date": "2026-11-24",
+      "words": 6384,
+      "minutes": 26,
+      "status": "published"
     }
   ]
 }
