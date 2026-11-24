@@ -638,6 +638,18 @@
       "words": 5143,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-54",
+      "number": 54,
+      "n": 54,
+      "title": "Book 2, Chapter 15: Clicks",
+      "file": "chapters/chapter-54.html",
+      "slug": "chapter-54",
+      "date": "2026-11-24",
+      "words": 5079,
+      "minutes": 20,
+      "status": "published"
     }
   ]
 }
