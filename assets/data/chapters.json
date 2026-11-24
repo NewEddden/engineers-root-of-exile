@@ -614,6 +614,18 @@
       "words": 6384,
       "minutes": 26,
       "status": "published"
+    },
+    {
+      "id": "ch-52",
+      "number": 52,
+      "n": 52,
+      "title": "Book 2, Chapter 13: Sael",
+      "file": "chapters/chapter-52.html",
+      "slug": "chapter-52",
+      "date": "2026-11-24",
+      "words": 7093,
+      "minutes": 28,
+      "status": "published"
     }
   ]
 }
