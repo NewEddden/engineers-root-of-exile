@@ -626,6 +626,18 @@
       "words": 7093,
       "minutes": 28,
       "status": "published"
+    },
+    {
+      "id": "ch-53",
+      "number": 53,
+      "n": 53,
+      "title": "Book 2, Chapter 14: The Long Table",
+      "file": "chapters/chapter-53.html",
+      "slug": "chapter-53",
+      "date": "2026-11-24",
+      "words": 5156,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
