@@ -590,6 +590,18 @@
       "words": 8212,
       "minutes": 33,
       "status": "published"
+    },
+    {
+      "id": "ch-50",
+      "number": 50,
+      "n": 50,
+      "title": "Book 2, Chapter 11: Say It in the Water",
+      "file": "chapters/chapter-50.html",
+      "slug": "chapter-50",
+      "date": "2026-11-24",
+      "words": 5527,
+      "minutes": 22,
+      "status": "published"
     }
   ]
 }
