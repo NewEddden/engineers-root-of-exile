@@ -686,6 +686,18 @@
       "words": 5154,
       "minutes": 21,
       "status": "published"
+    },
+    {
+      "id": "ch-58",
+      "number": 58,
+      "n": 58,
+      "title": "Book 2, Chapter 19: Dead Ground",
+      "file": "chapters/chapter-58.html",
+      "slug": "chapter-58",
+      "date": "2026-11-24",
+      "words": 4992,
+      "minutes": 20,
+      "status": "published"
     }
   ]
 }
