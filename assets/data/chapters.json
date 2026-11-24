@@ -674,6 +674,18 @@
       "words": 5594,
       "minutes": 22,
       "status": "published"
+    },
+    {
+      "id": "ch-57",
+      "number": 57,
+      "n": 57,
+      "title": "Book 2, Chapter 18: Under Is Teeth",
+      "file": "chapters/chapter-57.html",
+      "slug": "chapter-57",
+      "date": "2026-11-24",
+      "words": 5154,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
