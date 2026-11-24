@@ -707,8 +707,8 @@
       "file": "chapters/chapter-59.html",
       "slug": "chapter-59",
       "date": "2026-11-24",
-      "words": 7589,
-      "minutes": 30,
+      "words": 8075,
+      "minutes": 32,
       "status": "published"
     },
     {
@@ -721,6 +721,18 @@
       "date": "2026-11-24",
       "words": 5309,
       "minutes": 21,
+      "status": "published"
+    },
+    {
+      "id": "ch-61",
+      "number": 61,
+      "n": 61,
+      "title": "Book 2, Chapter 22: Guessed",
+      "file": "chapters/chapter-61.html",
+      "slug": "chapter-61",
+      "date": "2026-11-24",
+      "words": 6634,
+      "minutes": 27,
       "status": "published"
     }
   ]
