@@ -650,6 +650,18 @@
       "words": 5079,
       "minutes": 20,
       "status": "published"
+    },
+    {
+      "id": "ch-55",
+      "number": 55,
+      "n": 55,
+      "title": "Book 2, Chapter 16: Flood Slow",
+      "file": "chapters/chapter-55.html",
+      "slug": "chapter-55",
+      "date": "2026-11-24",
+      "words": 6572,
+      "minutes": 26,
+      "status": "published"
     }
   ]
 }
