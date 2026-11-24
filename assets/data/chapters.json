@@ -818,6 +818,18 @@
       "words": 8183,
       "minutes": 33,
       "status": "published"
+    },
+    {
+      "id": "ch-69",
+      "number": 69,
+      "n": 69,
+      "title": "Book 2, Chapter 30: Columns",
+      "file": "chapters/chapter-69.html",
+      "slug": "chapter-69",
+      "date": "2026-11-24",
+      "words": 9122,
+      "minutes": 36,
+      "status": "published"
     }
   ]
 }
