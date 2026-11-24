@@ -734,6 +734,18 @@
       "words": 6634,
       "minutes": 27,
       "status": "published"
+    },
+    {
+      "id": "ch-62",
+      "number": 62,
+      "n": 62,
+      "title": "Book 2, Chapter 23: Taster",
+      "file": "chapters/chapter-62.html",
+      "slug": "chapter-62",
+      "date": "2026-11-24",
+      "words": 5525,
+      "minutes": 22,
+      "status": "published"
     }
   ]
 }
