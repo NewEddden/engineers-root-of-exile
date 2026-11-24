@@ -806,6 +806,18 @@
       "words": 6188,
       "minutes": 25,
       "status": "published"
+    },
+    {
+      "id": "ch-68",
+      "number": 68,
+      "n": 68,
+      "title": "Book 2, Chapter 29: The Long Night",
+      "file": "chapters/chapter-68.html",
+      "slug": "chapter-68",
+      "date": "2026-11-24",
+      "words": 8011,
+      "minutes": 32,
+      "status": "published"
     }
   ]
 }
