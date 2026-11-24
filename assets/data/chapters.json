@@ -94,9 +94,9 @@
       "title": "Book 2, Batch 8: The Mark",
       "file": "chapters/chapter-08.html",
       "slug": "chapter-08",
-      "date": "2026-11-18",
-      "words": 5794,
-      "minutes": 23,
+      "date": "2026-11-24",
+      "words": 6106,
+      "minutes": 24,
       "status": "published"
     },
     {
@@ -154,8 +154,8 @@
       "title": "Book 2, Batch 13: The Returning Current",
       "file": "chapters/chapter-13.html",
       "slug": "chapter-13",
-      "date": "2026-11-18",
-      "words": 6397,
+      "date": "2026-11-24",
+      "words": 6546,
       "minutes": 26,
       "status": "published"
     },
@@ -238,8 +238,8 @@
       "title": "Book 3, Batch 1: Middle Ground",
       "file": "chapters/chapter-20.html",
       "slug": "chapter-20",
-      "date": "2026-11-23",
-      "words": 6383,
+      "date": "2026-11-24",
+      "words": 6539,
       "minutes": 26,
       "status": "published"
     },
