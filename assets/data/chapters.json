@@ -755,7 +755,7 @@
       "file": "chapters/chapter-63.html",
       "slug": "chapter-63",
       "date": "2026-11-24",
-      "words": 3398,
+      "words": 3489,
       "minutes": 14,
       "status": "published"
     },
@@ -767,8 +767,8 @@
       "file": "chapters/chapter-64.html",
       "slug": "chapter-64",
       "date": "2026-11-24",
-      "words": 5045,
-      "minutes": 20,
+      "words": 5346,
+      "minutes": 21,
       "status": "published"
     },
     {
@@ -779,7 +779,31 @@
       "file": "chapters/chapter-65.html",
       "slug": "chapter-65",
       "date": "2026-11-24",
-      "words": 6356,
+      "words": 6409,
+      "minutes": 26,
+      "status": "published"
+    },
+    {
+      "id": "ch-66",
+      "number": 66,
+      "n": 66,
+      "title": "Book 2, Chapter 27: Walked Down",
+      "file": "chapters/chapter-66.html",
+      "slug": "chapter-66",
+      "date": "2026-11-24",
+      "words": 4711,
+      "minutes": 19,
+      "status": "published"
+    },
+    {
+      "id": "ch-67",
+      "number": 67,
+      "n": 67,
+      "title": "Book 2, Chapter 28: The First Wet Word",
+      "file": "chapters/chapter-67.html",
+      "slug": "chapter-67",
+      "date": "2026-11-24",
+      "words": 6188,
       "minutes": 25,
       "status": "published"
     }
