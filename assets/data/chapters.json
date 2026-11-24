@@ -578,6 +578,18 @@
       "words": 5403,
       "minutes": 22,
       "status": "published"
+    },
+    {
+      "id": "ch-49",
+      "number": 49,
+      "n": 49,
+      "title": "Book 2, Chapter 10: Held Messages",
+      "file": "chapters/chapter-49.html",
+      "slug": "chapter-49",
+      "date": "2026-11-24",
+      "words": 8212,
+      "minutes": 33,
+      "status": "published"
     }
   ]
 }
