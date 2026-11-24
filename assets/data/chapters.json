@@ -698,6 +698,30 @@
       "words": 5017,
       "minutes": 20,
       "status": "published"
+    },
+    {
+      "id": "ch-59",
+      "number": 59,
+      "n": 59,
+      "title": "Book 2, Chapter 20: Below",
+      "file": "chapters/chapter-59.html",
+      "slug": "chapter-59",
+      "date": "2026-11-24",
+      "words": 7589,
+      "minutes": 30,
+      "status": "published"
+    },
+    {
+      "id": "ch-60",
+      "number": 60,
+      "n": 60,
+      "title": "Book 2, Chapter 21: One Body Heavy",
+      "file": "chapters/chapter-60.html",
+      "slug": "chapter-60",
+      "date": "2026-11-24",
+      "words": 5309,
+      "minutes": 21,
+      "status": "published"
     }
   ]
 }
