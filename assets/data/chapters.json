@@ -863,8 +863,8 @@
       "file": "chapters/chapter-72.html",
       "slug": "chapter-72",
       "date": "2026-11-24",
-      "words": 6619,
-      "minutes": 26,
+      "words": 6775,
+      "minutes": 27,
       "status": "published"
     },
     {
@@ -875,8 +875,20 @@
       "file": "chapters/chapter-73.html",
       "slug": "chapter-73",
       "date": "2026-11-24",
-      "words": 7729,
+      "words": 7718,
       "minutes": 31,
+      "status": "published"
+    },
+    {
+      "id": "ch-74",
+      "number": 74,
+      "n": 74,
+      "title": "Book 2, Chapter 35: No Mark",
+      "file": "chapters/chapter-74.html",
+      "slug": "chapter-74",
+      "date": "2026-11-24",
+      "words": 9949,
+      "minutes": 40,
       "status": "published"
     }
   ]
