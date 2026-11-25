@@ -839,7 +839,7 @@
       "file": "chapters/chapter-70.html",
       "slug": "chapter-70",
       "date": "2026-11-24",
-      "words": 6000,
+      "words": 6015,
       "minutes": 24,
       "status": "published"
     },
@@ -851,7 +851,7 @@
       "file": "chapters/chapter-71.html",
       "slug": "chapter-71",
       "date": "2026-11-24",
-      "words": 7190,
+      "words": 7225,
       "minutes": 29,
       "status": "published"
     },
@@ -865,6 +865,18 @@
       "date": "2026-11-24",
       "words": 6619,
       "minutes": 26,
+      "status": "published"
+    },
+    {
+      "id": "ch-73",
+      "number": 73,
+      "n": 73,
+      "title": "Book 2, Chapter 34: The Unopened Letter",
+      "file": "chapters/chapter-73.html",
+      "slug": "chapter-73",
+      "date": "2026-11-24",
+      "words": 7729,
+      "minutes": 31,
       "status": "published"
     }
   ]
