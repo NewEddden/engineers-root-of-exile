@@ -854,6 +854,18 @@
       "words": 7190,
       "minutes": 29,
       "status": "published"
+    },
+    {
+      "id": "ch-72",
+      "number": 72,
+      "n": 72,
+      "title": "Book 2, Chapter 33: Blue",
+      "file": "chapters/chapter-72.html",
+      "slug": "chapter-72",
+      "date": "2026-11-24",
+      "words": 6619,
+      "minutes": 26,
+      "status": "published"
     }
   ]
 }
