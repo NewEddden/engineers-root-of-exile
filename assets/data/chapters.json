@@ -890,6 +890,30 @@
       "words": 9949,
       "minutes": 40,
       "status": "published"
+    },
+    {
+      "id": "ch-75",
+      "number": 75,
+      "n": 75,
+      "title": "Book 2, Chapter 36: The Salt Line",
+      "file": "chapters/chapter-75.html",
+      "slug": "chapter-75",
+      "date": "2026-11-24",
+      "words": 7654,
+      "minutes": 31,
+      "status": "published"
+    },
+    {
+      "id": "ch-76",
+      "number": 76,
+      "n": 76,
+      "title": "Book 2, Chapter 37: The Fetch Line",
+      "file": "chapters/chapter-76.html",
+      "slug": "chapter-76",
+      "date": "2026-11-24",
+      "words": 6333,
+      "minutes": 25,
+      "status": "published"
     }
   ]
 }
