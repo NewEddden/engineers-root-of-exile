@@ -827,8 +827,8 @@
       "file": "chapters/chapter-69.html",
       "slug": "chapter-69",
       "date": "2026-11-24",
-      "words": 9127,
-      "minutes": 37,
+      "words": 9075,
+      "minutes": 36,
       "status": "published"
     },
     {
@@ -841,6 +841,18 @@
       "date": "2026-11-24",
       "words": 6000,
       "minutes": 24,
+      "status": "published"
+    },
+    {
+      "id": "ch-71",
+      "number": 71,
+      "n": 71,
+      "title": "Book 2, Chapter 32: The Seat",
+      "file": "chapters/chapter-71.html",
+      "slug": "chapter-71",
+      "date": "2026-11-24",
+      "words": 7190,
+      "minutes": 29,
       "status": "published"
     }
   ]
